@@ -34,6 +34,31 @@ export type Workflow = {
   recommendedActions: string[];
 };
 
+export type Artifact = {
+  id: string;
+  name: string;
+  type: "Copybook" | "Batch Job" | "Rule Map" | "Test Pack" | "Ops Note" | "Dependency Map";
+  system: string;
+  status: "Indexed" | "Draft" | "Review";
+  summary: string;
+};
+
+export type ActivityEvent = {
+  id: string;
+  title: string;
+  time: string;
+  category: "Query" | "Graph" | "Test" | "Knowledge" | "Modernization";
+  description: string;
+};
+
+export type PlanItem = {
+  id: string;
+  stage: "Stabilize" | "Wrap" | "Refactor" | "Modernize";
+  title: string;
+  owner: string;
+  impact: string;
+};
+
 export const systems: LegacySystem[] = [
   {
     id: "sys-claims",
@@ -210,6 +235,126 @@ export const workflows: Workflow[] = [
       "Generate test fixtures for partial update scenarios",
       "Trace export service dependencies before API wrapping",
     ],
+  },
+];
+
+export const artifacts: Artifact[] = [
+  {
+    id: "a-1",
+    name: "Penalty Rules Copybook",
+    type: "Copybook",
+    system: "Claims Processing Core",
+    status: "Indexed",
+    summary: "Shared constants and legacy class rule mappings used across penalty calculation branches.",
+  },
+  {
+    id: "a-2",
+    name: "Nightly Claims Batch Flow",
+    type: "Batch Job",
+    system: "Claims Processing Core",
+    status: "Indexed",
+    summary: "Dependency map of scheduled jobs, file inputs, and downstream notice generation steps.",
+  },
+  {
+    id: "a-3",
+    name: "Premium Adjustment Rule Graph",
+    type: "Rule Map",
+    system: "Enterprise Billing Engine",
+    status: "Review",
+    summary: "Cross-linked business logic map for policy adjustments, exceptions, and statement impacts.",
+  },
+  {
+    id: "a-4",
+    name: "Penalty Flow Characterization Pack",
+    type: "Test Pack",
+    system: "Claims Processing Core",
+    status: "Draft",
+    summary: "Generated regression tests covering duplicate penalty paths and downstream notice behavior.",
+  },
+  {
+    id: "a-5",
+    name: "Clinical Sync Operator Notes",
+    type: "Ops Note",
+    system: "Care Records Integration Layer",
+    status: "Review",
+    summary: "Captured expert explanations of exception handling and sync recovery assumptions.",
+  },
+  {
+    id: "a-6",
+    name: "Notice Dependency Matrix",
+    type: "Dependency Map",
+    system: "Claims Processing Core",
+    status: "Indexed",
+    summary: "Upstream/downstream lineage linking penalty outputs to communications, balances, and collections.",
+  },
+];
+
+export const activity: ActivityEvent[] = [
+  {
+    id: "e-1",
+    title: "Late-payment penalty flow queried",
+    time: "12 minutes ago",
+    category: "Query",
+    description: "Natural-language query resolved duplicate logic and downstream notice bypass behavior.",
+  },
+  {
+    id: "e-2",
+    title: "Dependency graph expanded",
+    time: "27 minutes ago",
+    category: "Graph",
+    description: "Two additional JCL jobs linked into the claims batch lineage graph.",
+  },
+  {
+    id: "e-3",
+    title: "Characterization pack drafted",
+    time: "51 minutes ago",
+    category: "Test",
+    description: "Initial regression scenarios generated for penalty branch equivalence.",
+  },
+  {
+    id: "e-4",
+    title: "Expert ops note captured",
+    time: "1 hour ago",
+    category: "Knowledge",
+    description: "Senior operator explanation recorded for legacy sync exception handling.",
+  },
+  {
+    id: "e-5",
+    title: "Modernization path updated",
+    time: "2 hours ago",
+    category: "Modernization",
+    description: "Recommended wrap-first plan selected over immediate module rewrite for notice routing.",
+  },
+];
+
+export const planBoard: PlanItem[] = [
+  {
+    id: "p-1",
+    stage: "Stabilize",
+    title: "Generate characterization tests for penalty flow",
+    owner: "Platform Engineering",
+    impact: "Protects duplicate branch behavior before consolidation",
+  },
+  {
+    id: "p-2",
+    stage: "Wrap",
+    title: "Create monitored service boundary for notice selection",
+    owner: "Modernization Team",
+    impact: "Reduces change risk while preserving existing logic",
+  },
+  {
+    id: "p-3",
+    stage: "Refactor",
+    title: "Unify duplicate penalty branches",
+    owner: "Core Systems",
+    impact: "Removes drift between legacy and current notice paths",
+  },
+  {
+    id: "p-4",
+    stage: "Modernize",
+    title: "Expose penalty decision service to downstream apps",
+    owner: "Architecture",
+    impact: "Creates reusable modernization layer without full rewrite",
   },
 ];
 

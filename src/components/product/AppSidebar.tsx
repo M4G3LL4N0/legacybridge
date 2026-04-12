@@ -3,6 +3,8 @@ import Link from "next/link";
 const nav = [
   { href: "/app", label: "Overview" },
   { href: "/app/workflows", label: "Workflows" },
+  { href: "/app/artifacts", label: "Artifacts" },
+  { href: "/app/settings", label: "Settings" },
   { href: "/platform", label: "Platform" },
   { href: "/industries", label: "Industries" },
   { href: "/pilot", label: "Pilot" },
@@ -52,7 +54,7 @@ export default function AppSidebar() {
               Claims Processing Core
             </div>
             <div className="mt-2 text-sm leading-6 text-white/62">
-              Demo workspace showing explainability, workflow mapping, findings, and modernization guidance.
+              Demo workspace showing explainability, workflow mapping, findings, test packs, and modernization guidance.
             </div>
           </div>
         </div>
