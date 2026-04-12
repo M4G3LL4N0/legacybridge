@@ -2,6 +2,10 @@ import Reveal from "@/components/site/Reveal";
 import ProductPreview from "@/components/site/ProductPreview";
 import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
+import SystemStrataGraphic from "@/components/graphics/SystemStrataGraphic";
+import LegacyGraphGraphic from "@/components/graphics/LegacyGraphGraphic";
+import ModernizationRunwayGraphic from "@/components/graphics/ModernizationRunwayGraphic";
+import SignalCardGraphic from "@/components/graphics/SignalCardGraphic";
 
 const pillars = [
   {
@@ -43,24 +47,6 @@ const trustItems = [
   "Built for brownfield operational reality",
   "Pilot-led adoption instead of blind rollout",
   "Outputs readable by both executives and engineers",
-];
-
-const workflowCards = [
-  {
-    title: "Claims notice routing",
-    risk: "High",
-    body: "Duplicate branch logic and legacy account handling surfaced before refactor planning begins.",
-  },
-  {
-    title: "Batch dependency visibility",
-    risk: "Moderate",
-    body: "Job relationships, control cards, and downstream consumers mapped into one graph layer.",
-  },
-  {
-    title: "Knowledge continuity",
-    risk: "High",
-    body: "Operator assumptions and undocumented exceptions captured before expertise walks out the door.",
-  },
 ];
 
 export default function HomePage() {
@@ -138,6 +124,12 @@ export default function HomePage() {
         </div>
       </Section>
 
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <SystemStrataGraphic />
+        </Reveal>
+      </section>
+
       <section className="section-divider">
         <Section
           eyebrow="Core surfaces"
@@ -157,27 +149,29 @@ export default function HomePage() {
         </Section>
       </section>
 
-      <Section
-        eyebrow="Signal layers"
-        title="Where the product creates leverage first."
-        description="Before large-scale rewrite or migration efforts begin, LegacyBridge creates clarity, preserves knowledge, and reduces uncertainty around the most fragile workflows."
-      >
-        <div className="grid gap-6 lg:grid-cols-3">
-          {workflowCards.map((card, index) => (
-            <Reveal key={card.title} delay={index * 0.05}>
-              <div className="premium-surface rounded-[1.9rem] p-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="text-lg font-medium text-white">{card.title}</div>
-                  <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] text-white/68">
-                    {card.risk}
-                  </div>
-                </div>
-                <div className="mt-4 text-sm leading-7 text-white/66">{card.body}</div>
-              </div>
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
+        <div className="grid gap-6 xl:grid-cols-[1.08fr_0.92fr]">
+          <Reveal>
+            <LegacyGraphGraphic />
+          </Reveal>
+          <div className="grid gap-6">
+            <Reveal delay={0.04}>
+              <SignalCardGraphic
+                title="Hidden branch visibility"
+                body="Surface the operational branches, routing paths, and downstream effects that teams rarely see until change fails."
+                tone="cyan"
+              />
             </Reveal>
-          ))}
+            <Reveal delay={0.08}>
+              <SignalCardGraphic
+                title="Knowledge continuity"
+                body="Capture what senior operators know before that understanding disappears into ticket history and memory."
+                tone="violet"
+              />
+            </Reveal>
+          </div>
         </div>
-      </Section>
+      </section>
 
       <Section
         eyebrow="Operational outcomes"
@@ -194,6 +188,12 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <ModernizationRunwayGraphic />
+        </Reveal>
+      </section>
 
       <Section
         eyebrow="Trust posture"
