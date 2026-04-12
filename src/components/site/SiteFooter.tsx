@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SiteFooter() {
   return (
     <footer className="border-t border-white/8 bg-black/20">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-12">
+      <div className="page-shell grid gap-10 py-14 lg:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]">
         <div className="max-w-md">
           <div className="flex items-center gap-3">
             <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(255,255,255,0.05))] text-xs font-semibold tracking-[0.2em] text-white">
@@ -21,19 +21,27 @@ export default function SiteFooter() {
         </div>
 
         <div>
-          <div className="text-sm font-medium text-white">Navigation</div>
+          <div className="text-sm font-medium text-white">Product</div>
           <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
-            <Link href="/">Home</Link>
             <Link href="/platform">Platform</Link>
             <Link href="/industries">Industries</Link>
+            <Link href="/pilot">Pilot</Link>
             <Link href="/pricing">Pricing</Link>
-            <Link href="/demo">Demo</Link>
-            <Link href="/about">About</Link>
           </div>
         </div>
 
         <div>
-          <div className="text-sm font-medium text-white">Contact</div>
+          <div className="text-sm font-medium text-white">Company</div>
+          <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
+            <Link href="/about">About</Link>
+            <Link href="/security">Security</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/demo">Demo</Link>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-sm font-medium text-white">Access</div>
           <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <a href="mailto:founder@legacybridge.ai">founder@legacybridge.ai</a>
             <span>Enterprise pilots available</span>

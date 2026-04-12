@@ -13,7 +13,7 @@ export default function ProductShell({ children }: { children: ReactNode }) {
         <div className="min-w-0 flex-1">
           <AppTopbar />
           <div className="premium-grid min-h-[calc(100vh-88px)] px-6 py-6 sm:px-8 sm:py-8">
-            {children}
+            <div className="mx-auto max-w-[1280px]">{children}</div>
           </div>
         </div>
       </div>
