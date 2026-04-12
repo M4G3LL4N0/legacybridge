@@ -57,39 +57,21 @@ a {
 }
 
 @keyframes floatSlow {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(0, -14px, 0) scale(1.02);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(0, -14px, 0) scale(1.02); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
 }
 
 @keyframes pulseMist {
-  0% {
-    opacity: 0.42;
-  }
-  50% {
-    opacity: 0.62;
-  }
-  100% {
-    opacity: 0.42;
-  }
+  0% { opacity: 0.42; }
+  50% { opacity: 0.62; }
+  100% { opacity: 0.42; }
 }
 
 @keyframes driftBeam {
-  0% {
-    transform: translateX(-3%) translateY(0);
-  }
-  50% {
-    transform: translateX(3%) translateY(-1%);
-  }
-  100% {
-    transform: translateX(-3%) translateY(0);
-  }
+  0% { transform: translateX(-3%) translateY(0); }
+  50% { transform: translateX(3%) translateY(-1%); }
+  100% { transform: translateX(-3%) translateY(0); }
 }
 
 .premium-page-shell {
@@ -128,6 +110,11 @@ a {
     0 30px 100px rgba(0,0,0,0.38),
     inset 0 1px 0 rgba(255,255,255,0.06);
   backdrop-filter: blur(22px);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .premium-surface::before {
@@ -139,6 +126,18 @@ a {
   filter: blur(34px);
   opacity: 0.8;
   pointer-events: none;
+}
+
+.premium-surface-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04)),
+    rgba(255,255,255,0.03);
+  box-shadow:
+    0 34px 110px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(125, 211, 252, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.07);
 }
 
 .signal-mist {
@@ -216,4 +215,63 @@ a {
   border-bottom: 1px solid rgba(255,255,255,0.05);
   background:
     linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.form-shell {
+  border: 1px solid rgba(255,255,255,0.10);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)),
+    rgba(0,0,0,0.16);
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  color: rgba(255,255,255,0.92);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.form-shell:hover {
+  border-color: rgba(125, 211, 252, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04)),
+    rgba(0,0,0,0.18);
+}
+
+.form-shell:focus-within {
+  outline: none;
+  border-color: rgba(103, 232, 249, 0.34);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.08);
+}
+
+.form-shell input,
+.form-shell textarea,
+.form-shell select {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: white;
+  font: inherit;
+}
+
+.form-shell input::placeholder,
+.form-shell textarea::placeholder {
+  color: rgba(255,255,255,0.42);
+}
+
+@media (max-width: 768px) {
+  .signal-mist-a,
+  .signal-mist-b,
+  .signal-mist-c {
+    filter: blur(60px);
+    opacity: 0.6;
+  }
+
+  .beam-fade-a,
+  .beam-fade-b {
+    opacity: 0.5;
+  }
 }

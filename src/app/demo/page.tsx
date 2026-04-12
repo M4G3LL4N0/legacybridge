@@ -1,10 +1,11 @@
 import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
+import DemoNarrativeGraphic from "@/components/graphics/DemoNarrativeGraphic";
 
 export default function DemoPage() {
   return (
-    <main>
+    <main className="premium-page-shell">
       <Section
         eyebrow="Demo"
         title="Request an enterprise LegacyBridge walkthrough."
@@ -12,7 +13,7 @@ export default function DemoPage() {
       >
         <div className="grid gap-6 xl:grid-cols-[1fr_1fr]">
           <Reveal>
-            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur-md">
+            <div className="premium-surface rounded-[1.9rem] p-7">
               <div className="text-xl font-medium text-white">What the demo should cover</div>
               <div className="mt-6 space-y-4">
                 {[
@@ -24,7 +25,7 @@ export default function DemoPage() {
                 ].map((item) => (
                   <div
                     key={item}
-                    className="rounded-[1.35rem] border border-white/10 bg-black/20 p-4 text-sm leading-7 text-white/72"
+                    className="rounded-[1.35rem] border border-white/10 bg-black/20 p-4 text-sm leading-7 text-white/72 transition hover:border-cyan-300/18 hover:bg-white/[0.05]"
                   >
                     {item}
                   </div>
@@ -34,29 +35,30 @@ export default function DemoPage() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur-md">
+            <div className="premium-surface rounded-[1.9rem] p-7">
               <div className="text-xl font-medium text-white">Request flow</div>
               <div className="mt-6 space-y-4">
-                {[
-                  "Work email",
-                  "Company",
-                  "Primary legacy system",
-                  "Current modernization challenge",
-                  "Preferred timeline",
-                ].map((field) => (
-                  <div
-                    key={field}
-                    className="rounded-2xl border border-white/10 bg-black/20 px-4 py-4 text-sm text-white/50"
-                  >
-                    {field}
-                  </div>
-                ))}
+                <label className="form-shell block">
+                  <input placeholder="Work email" />
+                </label>
+                <label className="form-shell block">
+                  <input placeholder="Company" />
+                </label>
+                <label className="form-shell block">
+                  <input placeholder="Primary legacy system" />
+                </label>
+                <label className="form-shell block">
+                  <textarea rows={4} placeholder="Current modernization challenge" />
+                </label>
+                <label className="form-shell block">
+                  <input placeholder="Preferred timeline" />
+                </label>
               </div>
 
               <div className="mt-6 flex flex-col gap-4">
                 <a
                   href="mailto:founder@legacybridge.ai?subject=LegacyBridge%20Demo%20Request"
-                  className="inline-flex items-center justify-center rounded-2xl border border-blue-300/30 bg-blue-300/16 px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(59,130,246,0.2)] transition hover:border-blue-200/40 hover:bg-blue-200/20"
+                  className="inline-flex items-center justify-center rounded-2xl border border-cyan-300/25 bg-[linear-gradient(135deg,rgba(56,189,248,0.18),rgba(16,185,129,0.16))] px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(56,189,248,0.14)] transition hover:border-cyan-200/35 hover:bg-[linear-gradient(135deg,rgba(56,189,248,0.24),rgba(16,185,129,0.22))]"
                 >
                   founder@legacybridge.ai
                 </a>
@@ -68,6 +70,12 @@ export default function DemoPage() {
           </Reveal>
         </div>
       </Section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+        <Reveal>
+          <DemoNarrativeGraphic />
+        </Reveal>
+      </section>
     </main>
   );
 }

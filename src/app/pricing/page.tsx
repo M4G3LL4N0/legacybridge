@@ -1,6 +1,7 @@
 import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
+import PricingValueGraphic from "@/components/graphics/PricingValueGraphic";
 
 const tiers = [
   {
@@ -43,17 +44,17 @@ const tiers = [
 
 export default function PricingPage() {
   return (
-    <main>
+    <main className="premium-page-shell">
       <Section
         eyebrow="Pricing"
         title="Enterprise pricing built around pilot-led adoption."
-        description="LegacyBridge is positioned for enterprise discovery, system understanding, and safer modernization planning rather than commodity seat-based developer tooling."
+        description="LegacyBridge is positioned for enterprise discovery, system understanding, and safer modernization planning rather than commodity seat-based tooling."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {tiers.map((tier, index) => (
             <Reveal key={tier.name} delay={index * 0.05}>
-              <article className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur-md">
-                <div className="text-sm uppercase tracking-[0.22em] text-blue-100/55">{tier.name}</div>
+              <article className="premium-surface rounded-[1.9rem] p-7">
+                <div className="text-sm uppercase tracking-[0.22em] text-cyan-100/55">{tier.name}</div>
                 <div className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white">{tier.price}</div>
                 <div className="mt-4 text-sm leading-7 text-white/68">{tier.body}</div>
 
@@ -71,14 +72,22 @@ export default function PricingPage() {
             </Reveal>
           ))}
         </div>
+      </Section>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <PricingValueGraphic />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 pt-8 sm:px-10 lg:px-12">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <ButtonLink href="/demo">Request pricing discussion</ButtonLink>
           <ButtonLink href="/pilot" variant="secondary">
             Review pilot flow
           </ButtonLink>
         </div>
-      </Section>
+      </section>
     </main>
   );
 }
