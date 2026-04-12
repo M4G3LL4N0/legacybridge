@@ -15,10 +15,10 @@ const tests = [
 
 export default function TestPackPreview() {
   return (
-    <div className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+    <div className="premium-surface rounded-[2rem] p-6">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-blue-100/55">Generated test pack</div>
+          <div className="text-xs uppercase tracking-[0.22em] text-cyan-100/55">Generated test pack</div>
           <h3 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">
             Characterization preview
           </h3>

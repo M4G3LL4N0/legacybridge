@@ -15,14 +15,14 @@ const lines = [
 
 export default function CodeViewerCard() {
   return (
-    <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#08111a]">
+    <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-[#07111d] glow-edge">
       <div className="flex items-center justify-between border-b border-white/8 px-5 py-4">
         <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-blue-100/55">Code view</div>
+          <div className="text-xs uppercase tracking-[0.22em] text-cyan-100/55">Code view</div>
           <div className="mt-1 text-sm font-medium text-white">PENALTYCALC01.cbl</div>
         </div>
         <div className="rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-[11px] text-amber-100">
-          Duplicate branch detected
+          Drift risk detected
         </div>
       </div>
 

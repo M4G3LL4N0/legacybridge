@@ -10,10 +10,10 @@ export default function ProductStatCard({
   sublabel,
 }: ProductStatCardProps) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-md">
-      <div className="text-xs uppercase tracking-[0.22em] text-white/45">{label}</div>
+    <div className="premium-surface rounded-3xl p-5">
+      <div className="text-xs uppercase tracking-[0.22em] text-white/42">{label}</div>
       <div className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-white">{value}</div>
-      {sublabel ? <div className="mt-2 text-sm text-white/55">{sublabel}</div> : null}
+      {sublabel ? <div className="mt-2 text-sm text-white/56">{sublabel}</div> : null}
     </div>
   );
 }

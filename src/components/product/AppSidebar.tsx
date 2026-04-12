@@ -14,35 +14,33 @@ const nav = [
   { href: "/app/artifacts", label: "Artifacts" },
   { href: "/app/settings", label: "Settings" },
   { href: "/app/reports/executive-summary", label: "Executive Summary" },
-  { href: "/platform", label: "Platform" },
-  { href: "/industries", label: "Industries" },
-  { href: "/pilot", label: "Pilot" },
 ];
 
 export default function AppSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full border-r border-white/8 bg-black/20 lg:w-[280px] lg:flex-shrink-0">
+    <aside className="w-full border-r border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.015))] lg:w-[300px] lg:flex-shrink-0">
       <div className="flex h-full flex-col">
         <div className="border-b border-white/8 px-6 py-6">
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/15 bg-white/6 text-sm font-semibold tracking-[0.2em] text-white shadow-[0_0_45px_rgba(59,130,246,0.16)]">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/15 bg-white/6 text-sm font-semibold tracking-[0.2em] text-white shadow-[0_0_45px_rgba(56,189,248,0.10)]">
               LB
             </div>
             <div>
-              <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/70">
+              <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/76">
                 LegacyBridge
               </div>
-              <div className="text-xs text-white/45">Product demo shell</div>
+              <div className="text-xs text-white/42">System intelligence workspace</div>
             </div>
           </Link>
         </div>
 
-        <div className="px-4 py-4">
-          <div className="mb-3 px-3 text-[11px] uppercase tracking-[0.25em] text-blue-100/55">
+        <div className="px-4 py-5">
+          <div className="mb-3 px-3 text-[11px] uppercase tracking-[0.25em] text-cyan-100/55">
             Workspace
           </div>
+
           <div className="space-y-2">
             {nav.map((item) => {
               const active =
@@ -55,8 +53,8 @@ export default function AppSidebar() {
                   href={item.href}
                   className={`flex items-center rounded-2xl border px-3 py-3 text-sm transition ${
                     active
-                      ? "border-blue-300/20 bg-blue-300/10 text-white"
-                      : "border-transparent text-white/72 hover:border-white/10 hover:bg-white/6 hover:text-white"
+                      ? "border-cyan-300/20 bg-[linear-gradient(135deg,rgba(56,189,248,0.14),rgba(16,185,129,0.10))] text-white shadow-[0_0_28px_rgba(56,189,248,0.08)]"
+                      : "border-transparent text-white/70 hover:border-white/10 hover:bg-white/6 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -67,15 +65,23 @@ export default function AppSidebar() {
         </div>
 
         <div className="mt-auto p-4">
-          <div className="rounded-3xl border border-blue-300/18 bg-blue-300/10 p-4">
-            <div className="text-xs uppercase tracking-[0.22em] text-blue-100/65">
-              Pilot mode
+          <div className="overflow-hidden rounded-3xl border border-cyan-300/14 bg-[linear-gradient(180deg,rgba(56,189,248,0.10),rgba(16,185,129,0.06))] p-4">
+            <div className="text-xs uppercase tracking-[0.22em] text-cyan-100/62">
+              Active pilot
             </div>
             <div className="mt-2 text-sm font-medium text-white">
               Claims Processing Core
             </div>
-            <div className="mt-2 text-sm leading-6 text-white/62">
-              Demo workspace showing auth, onboarding, connectors, ingest flows, explainability, graph mapping, and modernization guidance.
+            <div className="mt-3 space-y-2">
+              <div className="rounded-2xl border border-white/10 bg-black/20 px-3 py-2 text-xs text-white/72">
+                418 modules indexed
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-black/20 px-3 py-2 text-xs text-white/72">
+                96 rules surfaced
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-black/20 px-3 py-2 text-xs text-white/72">
+                31% coverage gap
+              </div>
             </div>
           </div>
         </div>

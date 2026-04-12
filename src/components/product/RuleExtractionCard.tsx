@@ -7,8 +7,8 @@ const rules = [
 
 export default function RuleExtractionCard() {
   return (
-    <div className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-      <div className="text-xs uppercase tracking-[0.22em] text-blue-100/55">Rule extraction</div>
+    <div className="premium-surface rounded-[2rem] p-6">
+      <div className="text-xs uppercase tracking-[0.22em] text-cyan-100/55">Rule extraction</div>
       <h3 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">
         Business logic surfaced
       </h3>

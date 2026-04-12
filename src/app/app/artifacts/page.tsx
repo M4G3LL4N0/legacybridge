@@ -18,7 +18,7 @@ export default function ArtifactsPage() {
           {artifacts.map((artifact) => (
             <div
               key={artifact.id}
-              className="rounded-[1.5rem] border border-white/10 bg-black/20 p-5"
+              className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-5"
             >
               <div className="flex items-start justify-between gap-4">
                 <div>

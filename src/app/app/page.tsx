@@ -14,13 +14,13 @@ import {
 function severityClasses(severity: string) {
   if (severity === "Critical") return "border-red-300/20 bg-red-300/10 text-red-100";
   if (severity === "High") return "border-amber-300/20 bg-amber-300/10 text-amber-100";
-  if (severity === "Moderate") return "border-blue-300/20 bg-blue-300/10 text-blue-100";
+  if (severity === "Moderate") return "border-cyan-300/20 bg-cyan-300/10 text-cyan-100";
   return "border-white/10 bg-white/5 text-white/70";
 }
 
 function categoryClasses(category: string) {
-  if (category === "Query") return "border-blue-300/20 bg-blue-300/10 text-blue-100";
-  if (category === "Graph") return "border-cyan-300/20 bg-cyan-300/10 text-cyan-100";
+  if (category === "Query") return "border-cyan-300/20 bg-cyan-300/10 text-cyan-100";
+  if (category === "Graph") return "border-blue-300/20 bg-blue-300/10 text-blue-100";
   if (category === "Test") return "border-emerald-300/20 bg-emerald-300/10 text-emerald-100";
   if (category === "Knowledge") return "border-violet-300/20 bg-violet-300/10 text-violet-100";
   return "border-amber-300/20 bg-amber-300/10 text-amber-100";
@@ -28,7 +28,7 @@ function categoryClasses(category: string) {
 
 function stageClasses(stage: string) {
   if (stage === "Stabilize") return "border-red-300/20 bg-red-300/10 text-red-100";
-  if (stage === "Wrap") return "border-blue-300/20 bg-blue-300/10 text-blue-100";
+  if (stage === "Wrap") return "border-cyan-300/20 bg-cyan-300/10 text-cyan-100";
   if (stage === "Refactor") return "border-violet-300/20 bg-violet-300/10 text-violet-100";
   return "border-emerald-300/20 bg-emerald-300/10 text-emerald-100";
 }
@@ -54,26 +54,28 @@ export default function ProductAppPage() {
               </div>
             }
           >
-            <div className="rounded-[1.5rem] border border-white/10 bg-[#08111a] p-5">
-              <div className="rounded-2xl border border-white/8 bg-white/5 p-4 text-sm leading-7 text-white/78">
-                Which modules calculate late-payment penalties and update downstream customer notices?
-              </div>
-
-              <div className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-                <div className="rounded-2xl border border-white/8 bg-white/5 p-4">
-                  <div className="text-xs uppercase tracking-[0.22em] text-white/45">Resolved insight</div>
-                  <div className="mt-3 text-sm leading-7 text-white/76">
-                    4 COBOL programs and 2 JCL jobs contribute to the penalty flow. One downstream
-                    branch still bypasses the updated notice renderer for legacy account classes.
-                    Duplicate penalty logic appears in two separate modules, increasing change risk.
-                  </div>
+            <div className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#07111d] glow-edge">
+              <div className="premium-grid p-5">
+                <div className="rounded-2xl border border-white/8 bg-white/5 p-4 text-sm leading-7 text-white/78">
+                  Which modules calculate late-payment penalties and update downstream customer notices?
                 </div>
 
-                <div className="rounded-2xl border border-white/8 bg-white/5 p-4">
-                  <div className="text-xs uppercase tracking-[0.22em] text-white/45">Recommended next step</div>
-                  <div className="mt-3 text-sm leading-7 text-white/76">
-                    Generate characterization tests for both branches, wrap notice selection behind a
-                    service boundary, then consolidate duplicate business logic.
+                <div className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+                  <div className="rounded-2xl border border-white/8 bg-white/5 p-4">
+                    <div className="text-xs uppercase tracking-[0.22em] text-white/45">Resolved insight</div>
+                    <div className="mt-3 text-sm leading-7 text-white/76">
+                      4 COBOL programs and 2 JCL jobs contribute to the penalty flow. One downstream
+                      branch still bypasses the updated notice renderer for legacy account classes.
+                      Duplicate penalty logic appears in two separate modules, increasing change risk.
+                    </div>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/8 bg-white/5 p-4">
+                    <div className="text-xs uppercase tracking-[0.22em] text-white/45">Recommended next step</div>
+                    <div className="mt-3 text-sm leading-7 text-white/76">
+                      Generate characterization tests for both branches, wrap notice selection behind a
+                      service boundary, then consolidate duplicate business logic.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -86,7 +88,7 @@ export default function ProductAppPage() {
             rightSlot={
               <Link
                 href="/app/settings"
-                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70 transition hover:bg-white/10"
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/78 transition hover:bg-white/10"
               >
                 Open settings
               </Link>
@@ -125,7 +127,7 @@ export default function ProductAppPage() {
               {systems.map((system) => (
                 <article
                   key={system.id}
-                  className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5"
+                  className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-5"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -194,7 +196,7 @@ export default function ProductAppPage() {
             rightSlot={
               <Link
                 href="/app/artifacts"
-                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70 transition hover:bg-white/10"
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/78 transition hover:bg-white/10"
               >
                 View all artifacts
               </Link>
@@ -280,7 +282,7 @@ export default function ProductAppPage() {
             rightSlot={
               <Link
                 href="/app/workflows"
-                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70 transition hover:bg-white/10"
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/78 transition hover:bg-white/10"
               >
                 Open workflow catalog
               </Link>
@@ -291,7 +293,7 @@ export default function ProductAppPage() {
                 <Link
                   key={workflow.slug}
                   href={`/app/workflows/${workflow.slug}`}
-                  className="block rounded-[1.35rem] border border-white/10 bg-black/20 p-4 transition hover:border-blue-300/20 hover:bg-white/[0.06]"
+                  className="block rounded-[1.35rem] border border-white/10 bg-black/20 p-4 transition hover:border-cyan-300/20 hover:bg-white/[0.06]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
