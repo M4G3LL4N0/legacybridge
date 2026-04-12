@@ -2,6 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProductShell from "@/components/product/ProductShell";
 import Panel from "@/components/product/Panel";
+import GraphCanvasCard from "@/components/product/GraphCanvasCard";
+import CodeViewerCard from "@/components/product/CodeViewerCard";
+import RuleExtractionCard from "@/components/product/RuleExtractionCard";
+import TestPackPreview from "@/components/product/TestPackPreview";
 import { getWorkflowBySlug } from "@/lib/demo-data";
 
 export default async function WorkflowDetailPage({
@@ -52,6 +56,16 @@ export default async function WorkflowDetailPage({
             </div>
           </div>
         </Panel>
+
+        <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+          <GraphCanvasCard />
+          <RuleExtractionCard />
+        </div>
+
+        <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+          <CodeViewerCard />
+          <TestPackPreview />
+        </div>
 
         <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
           <Panel eyebrow="Flow internals" title="Modules and findings">

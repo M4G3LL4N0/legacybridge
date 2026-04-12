@@ -1,16 +1,27 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const nav = [
   { href: "/app", label: "Overview" },
+  { href: "/app/command-center", label: "Command Center" },
+  { href: "/app/onboarding", label: "Onboarding" },
+  { href: "/app/connectors", label: "Connectors" },
+  { href: "/app/ingest", label: "Ingest" },
+  { href: "/app/sources", label: "Sources" },
   { href: "/app/workflows", label: "Workflows" },
   { href: "/app/artifacts", label: "Artifacts" },
   { href: "/app/settings", label: "Settings" },
+  { href: "/app/reports/executive-summary", label: "Executive Summary" },
   { href: "/platform", label: "Platform" },
   { href: "/industries", label: "Industries" },
   { href: "/pilot", label: "Pilot" },
 ];
 
 export default function AppSidebar() {
+  const pathname = usePathname();
+
   return (
     <aside className="w-full border-r border-white/8 bg-black/20 lg:w-[280px] lg:flex-shrink-0">
       <div className="flex h-full flex-col">
@@ -33,15 +44,25 @@ export default function AppSidebar() {
             Workspace
           </div>
           <div className="space-y-2">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="flex items-center rounded-2xl border border-transparent px-3 py-3 text-sm text-white/72 transition hover:border-white/10 hover:bg-white/6 hover:text-white"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {nav.map((item) => {
+              const active =
+                pathname === item.href ||
+                (item.href !== "/app" && pathname.startsWith(item.href));
+
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`flex items-center rounded-2xl border px-3 py-3 text-sm transition ${
+                    active
+                      ? "border-blue-300/20 bg-blue-300/10 text-white"
+                      : "border-transparent text-white/72 hover:border-white/10 hover:bg-white/6 hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
@@ -54,7 +75,7 @@ export default function AppSidebar() {
               Claims Processing Core
             </div>
             <div className="mt-2 text-sm leading-6 text-white/62">
-              Demo workspace showing explainability, workflow mapping, findings, test packs, and modernization guidance.
+              Demo workspace showing auth, onboarding, connectors, ingest flows, explainability, graph mapping, and modernization guidance.
             </div>
           </div>
         </div>

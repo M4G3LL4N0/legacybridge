@@ -42,6 +42,28 @@ const outcomes = [
   "Preserve logic before migrations begin",
 ];
 
+const trustItems = [
+  "Built for private enterprise deployment",
+  "Designed for brittle brownfield systems",
+  "Structured for pilot-led adoption",
+  "Executive-readable outputs and workflow risk framing",
+];
+
+const roiItems = [
+  {
+    title: "Faster system understanding",
+    body: "Compress the time required to explain a fragile workflow from weeks of interviews into a much faster, searchable knowledge surface.",
+  },
+  {
+    title: "Safer change programs",
+    body: "Generate test packs and dependency visibility before touching branch logic that nobody fully understands.",
+  },
+  {
+    title: "More leverage from existing teams",
+    body: "Help modern engineers contribute to legacy-heavy environments without waiting on a shrinking pool of specialists.",
+  },
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -67,16 +89,16 @@ export default function HomePage() {
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/pilot"
+                href="/demo"
                 className="inline-flex items-center justify-center rounded-2xl border border-blue-300/30 bg-blue-300/16 px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(59,130,246,0.2)] transition hover:border-blue-200/40 hover:bg-blue-200/20"
               >
-                Book a pilot
+                Request enterprise demo
               </Link>
               <Link
-                href="/platform"
+                href="/login"
                 className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white"
               >
-                Explore the platform
+                Open workspace
               </Link>
             </div>
 
@@ -229,6 +251,52 @@ export default function HomePage() {
         </div>
       </Section>
 
+      <Section
+        eyebrow="ROI framing"
+        title="Why teams buy before they rewrite."
+        description="LegacyBridge creates value by reducing uncertainty, compressing discovery time, and helping teams act more safely around systems they cannot casually replace."
+      >
+        <div className="grid gap-6 lg:grid-cols-3">
+          {roiItems.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md"
+            >
+              <div className="text-lg font-medium text-white">{item.title}</div>
+              <div className="mt-4 text-sm leading-7 text-white/68">{item.body}</div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="Trust posture"
+        title="Structured like an enterprise pilot, not a toy demo."
+        description="Use this section as premium placeholder proof while future logos, case studies, and customer evidence are added."
+      >
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {trustItems.map((item) => (
+            <div
+              key={item}
+              className="rounded-[1.35rem] border border-white/10 bg-black/20 p-5 text-sm leading-7 text-white/72"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {["Enterprise Logo", "Pilot Customer", "Transformation Partner", "Industry Reference"].map((placeholder) => (
+            <div
+              key={placeholder}
+              className="flex h-24 items-center justify-center rounded-3xl border border-dashed border-white/12 bg-white/[0.03] text-xs uppercase tracking-[0.22em] text-white/35"
+            >
+              {placeholder}
+            </div>
+          ))}
+        </div>
+      </Section>
+
       <section className="mx-auto max-w-7xl px-6 pb-20 sm:px-10 lg:px-12">
         <div className="rounded-[2rem] border border-white/10 bg-white/6 p-8 backdrop-blur-md sm:p-10 lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -238,24 +306,24 @@ export default function HomePage() {
                 Make your legacy system legible.
               </h3>
               <p className="mt-5 text-base leading-8 text-white/70">
-                Start with a pilot. We ingest one critical workflow, map its dependencies,
-                surface hidden business rules, and show where safe modernization starts.
+                Start with a pilot. Ingest one critical workflow, map its dependencies,
+                surface hidden business rules, and show where safer modernization starts.
               </p>
             </div>
 
             <div className="flex flex-col gap-4">
               <Link
-                href="/pilot"
+                href="/demo"
                 className="inline-flex items-center justify-center rounded-2xl border border-blue-300/30 bg-blue-300/16 px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(59,130,246,0.2)] transition hover:border-blue-200/40 hover:bg-blue-200/20"
               >
-                Start enterprise pilot
+                Request demo
               </Link>
-              <a
-                href="mailto:founder@legacybridge.ai"
+              <Link
+                href="/login"
                 className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white"
               >
-                founder@legacybridge.ai
-              </a>
+                Open workspace
+              </Link>
             </div>
           </div>
         </div>

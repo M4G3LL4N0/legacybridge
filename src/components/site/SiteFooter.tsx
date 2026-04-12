@@ -9,8 +9,8 @@ export default function SiteFooter() {
             LegacyBridge
           </div>
           <p className="mt-4 text-sm leading-7 text-white/60">
-            AI infrastructure for legacy code intelligence, safer modernization, and
-            operational continuity across mission-critical systems.
+            AI infrastructure for legacy code intelligence, safer modernization, operational continuity,
+            and pilot-driven enterprise transformation.
           </p>
         </div>
 
@@ -20,7 +20,8 @@ export default function SiteFooter() {
             <Link href="/">Home</Link>
             <Link href="/platform">Platform</Link>
             <Link href="/industries">Industries</Link>
-            <Link href="/pilot">Pilot</Link>
+            <Link href="/pricing">Pricing</Link>
+            <Link href="/demo">Demo</Link>
             <Link href="/about">About</Link>
           </div>
         </div>
@@ -30,7 +31,7 @@ export default function SiteFooter() {
           <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <a href="mailto:founder@legacybridge.ai">founder@legacybridge.ai</a>
             <span>Enterprise pilots available</span>
-            <span>Private deployment paths coming next</span>
+            <Link href="/login">Workspace login</Link>
           </div>
         </div>
       </div>
