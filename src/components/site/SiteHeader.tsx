@@ -6,11 +6,13 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/platform", label: "Platform" },
   { href: "/industries", label: "Industries" },
+  { href: "/use-cases", label: "Use Cases" },
+  { href: "/enterprise", label: "Enterprise" },
   { href: "/pilot", label: "Pilot" },
   { href: "/pricing", label: "Pricing" },
   { href: "/security", label: "Security" },
+  { href: "/docs", label: "Docs" },
   { href: "/demo", label: "Demo" },
-  { href: "/about", label: "About" },
 ];
 
 export default function SiteHeader() {

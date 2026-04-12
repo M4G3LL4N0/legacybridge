@@ -4,20 +4,35 @@ import SiteHeader from "@/components/site/SiteHeader";
 import SiteFooter from "@/components/site/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "LegacyBridge | AI for the code that still runs the world",
+  metadataBase: new URL("https://legacybridge.ai"),
+  title: "LegacyBridge | AI for the software nobody can casually replace",
   description:
-    "LegacyBridge transforms legacy codebases into searchable intelligence, safer change workflows, and modernization clarity.",
+    "LegacyBridge transforms legacy systems into a system intelligence layer for safer change, clearer modernization sequencing, and pilot-led enterprise adoption.",
+  keywords: [
+    "legacy modernization",
+    "COBOL AI",
+    "RPG modernization",
+    "Fortran modernization",
+    "legacy code intelligence",
+    "enterprise AI",
+    "workflow risk analysis",
+    "brownfield systems",
+  ],
   openGraph: {
     title: "LegacyBridge",
     description:
-      "AI for the code that still runs the world.",
+      "AI for the software nobody can casually replace.",
     images: ["/api/og"],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "LegacyBridge",
-    description: "AI for the code that still runs the world.",
+    description: "AI for the software nobody can casually replace.",
     images: ["/api/og"],
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 

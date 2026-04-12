@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SiteFooter() {
   return (
     <footer className="border-t border-white/8 bg-black/20">
-      <div className="page-shell grid gap-10 py-14 lg:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]">
+      <div className="page-shell grid gap-10 py-14 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.8fr]">
         <div className="max-w-md">
           <div className="flex items-center gap-3">
             <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(255,255,255,0.05))] text-xs font-semibold tracking-[0.2em] text-white">
@@ -25,8 +25,31 @@ export default function SiteFooter() {
           <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <Link href="/platform">Platform</Link>
             <Link href="/industries">Industries</Link>
+            <Link href="/use-cases">Use Cases</Link>
+            <Link href="/enterprise">Enterprise</Link>
             <Link href="/pilot">Pilot</Link>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-sm font-medium text-white">Buying</div>
+          <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <Link href="/pricing">Pricing</Link>
+            <Link href="/compare">Compare</Link>
+            <Link href="/buyers">Buyers</Link>
+            <Link href="/roi">ROI</Link>
+            <Link href="/demo">Demo</Link>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-sm font-medium text-white">Trust</div>
+          <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
+            <Link href="/security">Security</Link>
+            <Link href="/architecture">Architecture</Link>
+            <Link href="/resources">Resources</Link>
+            <Link href="/docs">Docs</Link>
+            <Link href="/updates">Updates</Link>
           </div>
         </div>
 
@@ -34,17 +57,9 @@ export default function SiteFooter() {
           <div className="text-sm font-medium text-white">Company</div>
           <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <Link href="/about">About</Link>
-            <Link href="/security">Security</Link>
+            <Link href="/faq">FAQ</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/demo">Demo</Link>
-          </div>
-        </div>
-
-        <div>
-          <div className="text-sm font-medium text-white">Access</div>
-          <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
             <a href="mailto:founder@legacybridge.ai">founder@legacybridge.ai</a>
-            <span>Enterprise pilots available</span>
             <Link href="/login">Workspace access</Link>
           </div>
         </div>

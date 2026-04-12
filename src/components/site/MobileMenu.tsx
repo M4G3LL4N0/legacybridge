@@ -7,9 +7,19 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/platform", label: "Platform" },
   { href: "/industries", label: "Industries" },
+  { href: "/use-cases", label: "Use Cases" },
+  { href: "/enterprise", label: "Enterprise" },
   { href: "/pilot", label: "Pilot" },
   { href: "/pricing", label: "Pricing" },
   { href: "/security", label: "Security" },
+  { href: "/compare", label: "Compare" },
+  { href: "/buyers", label: "Buyers" },
+  { href: "/roi", label: "ROI" },
+  { href: "/architecture", label: "Architecture" },
+  { href: "/resources", label: "Resources" },
+  { href: "/docs", label: "Docs" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/updates", label: "Updates" },
   { href: "/demo", label: "Demo" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -34,7 +44,7 @@ export default function MobileMenu() {
           <div className="mb-3 text-[11px] uppercase tracking-[0.22em] text-cyan-100/50">
             Navigate
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2 max-h-[70vh] overflow-auto pr-1">
             {nav.map((item) => (
               <Link
                 key={item.href}
