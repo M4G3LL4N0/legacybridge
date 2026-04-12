@@ -6,6 +6,8 @@ import SystemStrataGraphic from "@/components/graphics/SystemStrataGraphic";
 import LegacyGraphGraphic from "@/components/graphics/LegacyGraphGraphic";
 import ModernizationRunwayGraphic from "@/components/graphics/ModernizationRunwayGraphic";
 import SignalCardGraphic from "@/components/graphics/SignalCardGraphic";
+import FaqSection from "@/components/site/FaqSection";
+import CaseStudyPlaceholderSection from "@/components/site/CaseStudyPlaceholderSection";
 
 const pillars = [
   {
@@ -77,9 +79,9 @@ export default function HomePage() {
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href="/demo">Request enterprise demo</ButtonLink>
+              <ButtonLink href="/demo">Request enterprise walkthrough</ButtonLink>
               <ButtonLink href="/login" variant="secondary">
-                Open workspace
+                Enter the workspace
               </ButtonLink>
             </div>
 
@@ -115,7 +117,7 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {pillars.map((pillar, index) => (
             <Reveal key={pillar.title} delay={index * 0.05}>
-              <article className="premium-surface rounded-[1.9rem] p-6">
+              <article className="premium-surface premium-surface-hover rounded-[1.9rem] p-6">
                 <div className="text-lg font-medium text-white">{pillar.title}</div>
                 <p className="mt-4 text-sm leading-7 text-white/66">{pillar.body}</p>
               </article>
@@ -196,6 +198,38 @@ export default function HomePage() {
       </section>
 
       <Section
+        eyebrow="Pilot package"
+        title="A focused pilot is the easiest way to prove value."
+        description="LegacyBridge is not trying to boil the ocean on day one. The strongest entry point is one critical workflow, one workspace, and one high-signal readout."
+      >
+        <div className="grid gap-6 lg:grid-cols-3">
+          {[
+            {
+              title: "What gets ingested",
+              body: "One important workflow, surrounding source materials, system artifacts, and the most relevant operational context.",
+            },
+            {
+              title: "What gets surfaced",
+              body: "Dependencies, hidden branches, rules, test gaps, expert assumptions, and the first credible modernization path.",
+            },
+            {
+              title: "What leadership gets",
+              body: "A clearer understanding of risk, where the system is fragile, and where to act first without triggering a blind rewrite.",
+            },
+          ].map((item, index) => (
+            <Reveal key={item.title} delay={index * 0.05}>
+              <div className="premium-surface premium-surface-hover rounded-[1.9rem] p-6">
+                <div className="text-lg font-medium text-white">{item.title}</div>
+                <div className="mt-4 text-sm leading-7 text-white/68">{item.body}</div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <CaseStudyPlaceholderSection />
+
+      <Section
         eyebrow="Trust posture"
         title="Premium enterprise feel without looking like another AI toy."
         description="This visual system is meant to communicate control, intelligence, and credibility around fragile infrastructure."
@@ -210,6 +244,8 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+
+      <FaqSection />
 
       <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
         <Reveal>

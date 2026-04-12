@@ -2,6 +2,7 @@ import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
 import DemoNarrativeGraphic from "@/components/graphics/DemoNarrativeGraphic";
+import DemoWorkspaceGraphic from "@/components/graphics/DemoWorkspaceGraphic";
 
 export default function DemoPage() {
   return (
@@ -71,7 +72,13 @@ export default function DemoPage() {
         </div>
       </Section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <DemoWorkspaceGraphic />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 pt-8 sm:px-10 lg:px-12">
         <Reveal>
           <DemoNarrativeGraphic />
         </Reveal>

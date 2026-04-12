@@ -21,13 +21,16 @@ export default function MobileMenu() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85"
+        className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85 transition hover:bg-white/10"
       >
-        Menu
+        {open ? "Close" : "Menu"}
       </button>
 
       {open ? (
-        <div className="absolute left-6 right-6 top-[76px] z-50 rounded-[1.5rem] border border-white/10 bg-[#08111a]/95 p-4 shadow-2xl backdrop-blur-xl">
+        <div className="absolute left-6 right-6 top-[78px] z-50 rounded-[1.6rem] border border-white/10 bg-[#08111a]/96 p-4 shadow-[0_30px_100px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
+          <div className="mb-3 text-[11px] uppercase tracking-[0.22em] text-cyan-100/50">
+            Navigate
+          </div>
           <div className="space-y-2">
             {nav.map((item) => (
               <Link
@@ -39,6 +42,15 @@ export default function MobileMenu() {
                 {item.label}
               </Link>
             ))}
+          </div>
+
+          <div className="mt-4 rounded-2xl border border-cyan-300/14 bg-cyan-300/8 p-4">
+            <div className="text-xs uppercase tracking-[0.22em] text-cyan-100/52">
+              LegacyBridge
+            </div>
+            <div className="mt-2 text-sm leading-6 text-white/68">
+              AI for legacy code intelligence and safer modernization.
+            </div>
           </div>
         </div>
       ) : null}

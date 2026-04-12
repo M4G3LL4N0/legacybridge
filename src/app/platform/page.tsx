@@ -4,6 +4,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
 import WorkflowLatticeGraphic from "@/components/graphics/WorkflowLatticeGraphic";
 import ProductShowcaseGraphic from "@/components/graphics/ProductShowcaseGraphic";
+import PlatformCommandGraphic from "@/components/graphics/PlatformCommandGraphic";
 
 const modules = [
   {
@@ -61,6 +62,12 @@ export default function PlatformPage() {
       <section className="mx-auto max-w-7xl px-6 py-10 sm:px-10 lg:px-12">
         <Reveal>
           <ProductShowcaseGraphic />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <PlatformCommandGraphic />
         </Reveal>
       </section>
 
