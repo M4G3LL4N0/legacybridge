@@ -2,6 +2,8 @@ import Link from "next/link";
 import ProductShell from "@/components/product/ProductShell";
 import ProductStatCard from "@/components/product/ProductStatCard";
 import Panel from "@/components/product/Panel";
+import RouteCtaStrip from "@/components/product/RouteCtaStrip";
+import StatusBanner from "@/components/product/StatusBanner";
 import {
   activity,
   artifacts,
@@ -43,6 +45,27 @@ export default function ProductAppPage() {
           <ProductStatCard label="Critical findings" value="3" sublabel="Require leadership attention" />
           <ProductStatCard label="Coverage gap avg" value="29%" sublabel="Before generated test packs" />
         </section>
+
+        <div className="grid gap-6 xl:grid-cols-3">
+          <StatusBanner
+            eyebrow="Workspace health"
+            title="Pilot signal quality is strong"
+            body="The current pilot has enough graph, artifact, and workflow coverage to support a credible modernization readout."
+            tone="emerald"
+          />
+          <StatusBanner
+            eyebrow="Attention"
+            title="One workflow still carries elevated routing risk"
+            body="Notice-selection behavior remains the highest-value path to stabilize before broader refactor work begins."
+            tone="amber"
+          />
+          <StatusBanner
+            eyebrow="Next best move"
+            title="Expand test generation coverage"
+            body="Increasing characterization breadth is the fastest way to reduce uncertainty before touching duplicate branches."
+            tone="cyan"
+          />
+        </div>
 
         <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
           <Panel
@@ -312,6 +335,15 @@ export default function ProductAppPage() {
             </div>
           </Panel>
         </div>
+
+        <RouteCtaStrip
+          title="Need the public narrative too?"
+          body="Move between the product workspace and the customer-facing story without losing context. The public site now mirrors the enterprise intelligence framing of the app."
+          primaryHref="/demo"
+          primaryLabel="Open demo page"
+          secondaryHref="/"
+          secondaryLabel="Back to website"
+        />
       </div>
     </ProductShell>
   );
