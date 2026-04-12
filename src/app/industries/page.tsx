@@ -1,6 +1,7 @@
-import Section from "@/components/ui/Section";
 import Reveal from "@/components/site/Reveal";
 import IndustryFitGraphic from "@/components/graphics/IndustryFitGraphic";
+import PageIntro from "@/components/site/PageIntro";
+import SectionCta from "@/components/site/SectionCta";
 
 const industries = [
   {
@@ -32,26 +33,42 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <main className="premium-page-shell">
-      <Section
-        eyebrow="Industries"
-        title="Best where replacement is expensive and understanding is scarce."
-        description="LegacyBridge is strongest in organizations with valuable old logic, fragile workflows, and real pressure to modernize carefully."
-      >
-        <div className="grid gap-6 lg:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <PageIntro
+          eyebrow="Industries"
+          title="Best where replacement is expensive and understanding is scarce."
+          description="LegacyBridge is strongest in environments where legacy logic carries operational weight and understanding gaps create strategic risk."
+        />
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {industries.map((industry, index) => (
             <Reveal key={industry.title} delay={index * 0.04}>
-              <article className="premium-surface rounded-[1.9rem] p-7">
+              <article className="premium-surface premium-surface-hover rounded-[1.9rem] p-7">
                 <div className="text-xl font-medium text-white">{industry.title}</div>
                 <p className="mt-4 text-sm leading-7 text-white/66">{industry.body}</p>
               </article>
             </Reveal>
           ))}
         </div>
-      </Section>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
         <Reveal>
           <IndustryFitGraphic />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+        <Reveal>
+          <SectionCta
+            eyebrow="Industry entry"
+            title="The right first customer usually has one workflow they cannot afford to misunderstand."
+            body="That is the wedge. Prove value on one fragile system path, then expand from trust."
+            primaryHref="/demo"
+            primaryLabel="Request walkthrough"
+            secondaryHref="/pricing"
+            secondaryLabel="See pricing"
+          />
         </Reveal>
       </section>
     </main>

@@ -1,15 +1,18 @@
-import Section from "@/components/ui/Section";
 import Reveal from "@/components/site/Reveal";
+import PageIntro from "@/components/site/PageIntro";
+import SectionCta from "@/components/site/SectionCta";
 
 export default function AboutPage() {
   return (
     <main className="premium-page-shell">
-      <Section
-        eyebrow="About"
-        title="LegacyBridge exists because critical old systems still carry real economic weight."
-        description="The future is not only about generating new software. It is also about making the software that still runs important organizations understandable again."
-      >
-        <div className="grid gap-6 lg:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <PageIntro
+          eyebrow="About"
+          title="LegacyBridge exists because critical old systems still carry real economic weight."
+          description="The future is not only about generating new software. It is also about making the software that still runs important organizations understandable again."
+        />
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <Reveal>
             <div className="premium-surface premium-surface-hover rounded-[1.9rem] p-7">
               <div className="text-xl font-medium text-white">Thesis</div>
@@ -41,7 +44,21 @@ export default function AboutPage() {
             </div>
           </Reveal>
         </div>
-      </Section>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+        <Reveal>
+          <SectionCta
+            eyebrow="Why now"
+            title="AI changed the economics of understanding old systems."
+            body="The opportunity is not only faster new-code generation. It is also making legacy software far more legible, governable, and strategically useful."
+            primaryHref="/demo"
+            primaryLabel="Request walkthrough"
+            secondaryHref="/platform"
+            secondaryLabel="See platform"
+          />
+        </Reveal>
+      </section>
     </main>
   );
 }

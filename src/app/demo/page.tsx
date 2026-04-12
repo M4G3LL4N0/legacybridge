@@ -1,18 +1,21 @@
-import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
 import DemoNarrativeGraphic from "@/components/graphics/DemoNarrativeGraphic";
 import DemoWorkspaceGraphic from "@/components/graphics/DemoWorkspaceGraphic";
+import PageIntro from "@/components/site/PageIntro";
+import SectionCta from "@/components/site/SectionCta";
 
 export default function DemoPage() {
   return (
     <main className="premium-page-shell">
-      <Section
-        eyebrow="Demo"
-        title="Request a LegacyBridge enterprise walkthrough."
-        description="The best first demo proves that one fragile workflow can become understandable, actionable, and strategically safer within a focused pilot."
-      >
-        <div className="grid gap-6 xl:grid-cols-[1fr_1fr]">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <PageIntro
+          eyebrow="Demo"
+          title="Request a LegacyBridge enterprise walkthrough."
+          description="The best first demo proves that one fragile workflow can become understandable, actionable, and strategically safer within a focused pilot."
+        />
+
+        <div className="mt-12 grid gap-6 xl:grid-cols-[1fr_1fr]">
           <Reveal>
             <div className="premium-surface rounded-[1.9rem] p-7">
               <div className="text-xl font-medium text-white">What a strong walkthrough should show</div>
@@ -57,12 +60,7 @@ export default function DemoPage() {
               </div>
 
               <div className="mt-6 flex flex-col gap-4">
-                <a
-                  href="mailto:founder@legacybridge.ai?subject=LegacyBridge%20Demo%20Request"
-                  className="inline-flex items-center justify-center rounded-2xl border border-cyan-300/25 bg-[linear-gradient(135deg,rgba(56,189,248,0.18),rgba(16,185,129,0.16))] px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(56,189,248,0.14)] transition hover:border-cyan-200/35 hover:bg-[linear-gradient(135deg,rgba(56,189,248,0.24),rgba(16,185,129,0.22))]"
-                >
-                  Request walkthrough
-                </a>
+                <ButtonLink href="/login">Request walkthrough</ButtonLink>
                 <ButtonLink href="/login" variant="secondary">
                   View workspace
                 </ButtonLink>
@@ -70,7 +68,7 @@ export default function DemoPage() {
             </div>
           </Reveal>
         </div>
-      </Section>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
         <Reveal>
@@ -78,9 +76,23 @@ export default function DemoPage() {
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24 pt-8 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 pb-16 pt-8 sm:px-10 lg:px-12">
         <Reveal>
           <DemoNarrativeGraphic />
+        </Reveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+        <Reveal>
+          <SectionCta
+            eyebrow="Next move"
+            title="Use the walkthrough to qualify the first pilot."
+            body="A strong first conversation should identify one critical workflow, one buyer group, and one credible path to value."
+            primaryHref="/pricing"
+            primaryLabel="Review pricing"
+            secondaryHref="/platform"
+            secondaryLabel="Explore platform"
+          />
         </Reveal>
       </section>
     </main>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MobileMenu from "@/components/site/MobileMenu";
+import ButtonLink from "@/components/ui/ButtonLink";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -36,18 +37,12 @@ export default function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Link
-            href="/login"
-            className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78 transition hover:bg-white/10"
-          >
+          <ButtonLink href="/login" variant="secondary" className="px-4 py-2">
             Open workspace
-          </Link>
-          <Link
-            href="/demo"
-            className="inline-flex items-center justify-center rounded-2xl border border-cyan-300/25 bg-[linear-gradient(135deg,rgba(56,189,248,0.18),rgba(16,185,129,0.16))] px-4 py-2 text-sm font-medium text-white shadow-[0_0_40px_rgba(56,189,248,0.14)] transition hover:border-cyan-200/35 hover:bg-[linear-gradient(135deg,rgba(56,189,248,0.24),rgba(16,185,129,0.22))]"
-          >
+          </ButtonLink>
+          <ButtonLink href="/demo" className="px-4 py-2">
             Request demo
-          </Link>
+          </ButtonLink>
         </div>
 
         <MobileMenu />

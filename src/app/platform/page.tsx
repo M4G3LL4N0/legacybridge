@@ -1,10 +1,9 @@
-import Link from "next/link";
-import Section from "@/components/ui/Section";
-import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
 import WorkflowLatticeGraphic from "@/components/graphics/WorkflowLatticeGraphic";
 import ProductShowcaseGraphic from "@/components/graphics/ProductShowcaseGraphic";
 import PlatformCommandGraphic from "@/components/graphics/PlatformCommandGraphic";
+import PageIntro from "@/components/site/PageIntro";
+import SectionCta from "@/components/site/SectionCta";
 
 const modules = [
   {
@@ -36,12 +35,14 @@ const modules = [
 export default function PlatformPage() {
   return (
     <main className="premium-page-shell">
-      <Section
-        eyebrow="Platform"
-        title="A system intelligence layer for old code."
-        description="LegacyBridge is built to make high-value legacy systems more understandable, more governable, and safer to evolve."
-      >
-        <div className="grid gap-6 lg:grid-cols-3">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <PageIntro
+          eyebrow="Platform"
+          title="A system intelligence layer for old code."
+          description="LegacyBridge is built to make high-value legacy systems more understandable, more governable, and safer to evolve."
+        />
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {modules.map((module, index) => (
             <Reveal key={module.title} delay={index * 0.04}>
               <article className="premium-surface premium-surface-hover rounded-[1.9rem] p-6">
@@ -51,7 +52,7 @@ export default function PlatformPage() {
             </Reveal>
           ))}
         </div>
-      </Section>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
         <Reveal>
@@ -71,12 +72,18 @@ export default function PlatformPage() {
         </Reveal>
       </section>
 
-      <Section
-        eyebrow="Pilot motion"
-        title="The platform is designed to prove signal fast."
-        description="The first win is not a massive rollout. It is a clearer understanding of one critical workflow and a better decision about what to do next."
-      >
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <div className="max-w-3xl">
+          <div className="text-sm uppercase tracking-[0.25em] text-cyan-100/60">Pilot motion</div>
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
+            The first win is signal, not sprawl.
+          </h2>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
+            The strongest first outcome is a clearer understanding of one critical workflow and a better decision about what to do next.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[
             "Ingest one fragile workflow and its relevant system context",
             "Build a first-pass dependency and rule graph",
@@ -93,32 +100,19 @@ export default function PlatformPage() {
             </Reveal>
           ))}
         </div>
-      </Section>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
         <Reveal>
-          <div className="premium-surface rounded-[2.2rem] p-8 sm:p-10 lg:p-12">
-            <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-              <div className="max-w-2xl">
-                <div className="text-sm uppercase tracking-[0.25em] text-cyan-100/58">Next move</div>
-                <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
-                  Start where the system is least understood.
-                </h3>
-                <p className="mt-5 text-base leading-8 text-white/70">
-                  That is usually where the value of visibility, testing, and better sequencing is highest.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <ButtonLink href="/demo">Request demo</ButtonLink>
-                <Link
-                  href="/pilot"
-                  className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white"
-                >
-                  Review pilot
-                </Link>
-              </div>
-            </div>
-          </div>
+          <SectionCta
+            eyebrow="Next move"
+            title="Start where the system is least understood."
+            body="That is usually where the value of visibility, testing, and better sequencing is highest."
+            primaryHref="/demo"
+            primaryLabel="Request demo"
+            secondaryHref="/pilot"
+            secondaryLabel="Review pilot"
+          />
         </Reveal>
       </section>
     </main>
