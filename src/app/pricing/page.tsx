@@ -1,5 +1,6 @@
-import Link from "next/link";
 import Section from "@/components/ui/Section";
+import ButtonLink from "@/components/ui/ButtonLink";
+import Reveal from "@/components/site/Reveal";
 
 const tiers = [
   {
@@ -49,42 +50,33 @@ export default function PricingPage() {
         description="LegacyBridge is positioned for enterprise discovery, system understanding, and safer modernization planning rather than commodity seat-based developer tooling."
       >
         <div className="grid gap-6 lg:grid-cols-3">
-          {tiers.map((tier) => (
-            <article
-              key={tier.name}
-              className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur-md"
-            >
-              <div className="text-sm uppercase tracking-[0.22em] text-blue-100/55">{tier.name}</div>
-              <div className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white">{tier.price}</div>
-              <div className="mt-4 text-sm leading-7 text-white/68">{tier.body}</div>
+          {tiers.map((tier, index) => (
+            <Reveal key={tier.name} delay={index * 0.05}>
+              <article className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur-md">
+                <div className="text-sm uppercase tracking-[0.22em] text-blue-100/55">{tier.name}</div>
+                <div className="mt-3 text-4xl font-semibold tracking-[-0.05em] text-white">{tier.price}</div>
+                <div className="mt-4 text-sm leading-7 text-white/68">{tier.body}</div>
 
-              <div className="mt-6 space-y-3">
-                {tier.items.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-white/10 bg-black/20 p-3 text-sm text-white/72"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </article>
+                <div className="mt-6 space-y-3">
+                  {tier.items.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-white/10 bg-black/20 p-3 text-sm text-white/72"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <Link
-            href="/demo"
-            className="inline-flex items-center justify-center rounded-2xl border border-blue-300/30 bg-blue-300/16 px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(59,130,246,0.2)] transition hover:border-blue-200/40 hover:bg-blue-200/20"
-          >
-            Request pricing discussion
-          </Link>
-          <Link
-            href="/pilot"
-            className="inline-flex items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-6 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white"
-          >
+          <ButtonLink href="/demo">Request pricing discussion</ButtonLink>
+          <ButtonLink href="/pilot" variant="secondary">
             Review pilot flow
-          </Link>
+          </ButtonLink>
         </div>
       </Section>
     </main>

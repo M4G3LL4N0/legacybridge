@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   title: "LegacyBridge | AI for the code that still runs the world",
   description:
     "LegacyBridge transforms legacy codebases into searchable intelligence, safer change workflows, and modernization clarity.",
+  openGraph: {
+    title: "LegacyBridge",
+    description:
+      "AI for the code that still runs the world.",
+    images: ["/api/og"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LegacyBridge",
+    description: "AI for the code that still runs the world.",
+    images: ["/api/og"],
+  },
 };
 
 export default function RootLayout({

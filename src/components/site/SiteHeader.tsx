@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "@/components/site/MobileMenu";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -33,10 +34,10 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/login"
-            className="hidden rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78 transition hover:bg-white/10 md:inline-flex"
+            className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78 transition hover:bg-white/10"
           >
             Login
           </Link>
@@ -47,6 +48,8 @@ export default function SiteHeader() {
             Request demo
           </Link>
         </div>
+
+        <MobileMenu />
       </div>
     </header>
   );
