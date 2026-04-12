@@ -9,20 +9,20 @@ export default function DemoPage() {
     <main className="premium-page-shell">
       <Section
         eyebrow="Demo"
-        title="Request an enterprise LegacyBridge walkthrough."
-        description="Use this page as the premium request-demo and contact surface while future form infrastructure is added."
+        title="Request a LegacyBridge enterprise walkthrough."
+        description="The best first demo proves that one fragile workflow can become understandable, actionable, and strategically safer within a focused pilot."
       >
         <div className="grid gap-6 xl:grid-cols-[1fr_1fr]">
           <Reveal>
             <div className="premium-surface rounded-[1.9rem] p-7">
-              <div className="text-xl font-medium text-white">What the demo should cover</div>
+              <div className="text-xl font-medium text-white">What a strong walkthrough should show</div>
               <div className="mt-6 space-y-4">
                 {[
-                  "How LegacyBridge builds a system intelligence layer",
-                  "Natural-language querying over fragile legacy workflows",
-                  "Rule extraction and dependency graphing",
-                  "Generated test packs and workflow risk framing",
-                  "Pilot structure and private deployment posture",
+                  "How LegacyBridge builds a cross-source system intelligence layer",
+                  "How natural-language questions resolve into workflow understanding",
+                  "How rules, dependencies, and hidden branches are surfaced",
+                  "How generated test packs support safer next steps",
+                  "How a pilot leads into broader enterprise deployment",
                 ].map((item) => (
                   <div
                     key={item}
@@ -61,10 +61,10 @@ export default function DemoPage() {
                   href="mailto:founder@legacybridge.ai?subject=LegacyBridge%20Demo%20Request"
                   className="inline-flex items-center justify-center rounded-2xl border border-cyan-300/25 bg-[linear-gradient(135deg,rgba(56,189,248,0.18),rgba(16,185,129,0.16))] px-6 py-3 text-sm font-medium text-white shadow-[0_0_40px_rgba(56,189,248,0.14)] transition hover:border-cyan-200/35 hover:bg-[linear-gradient(135deg,rgba(56,189,248,0.24),rgba(16,185,129,0.22))]"
                 >
-                  founder@legacybridge.ai
+                  Request walkthrough
                 </a>
                 <ButtonLink href="/login" variant="secondary">
-                  View workspace demo
+                  View workspace
                 </ButtonLink>
               </div>
             </div>

@@ -8,7 +8,7 @@ const tiers = [
   {
     name: "Pilot",
     price: "Custom",
-    body: "The best entry point. One workflow, one workspace, one high-signal readout that proves value fast.",
+    body: "The strongest entry point. One critical workflow, one workspace, and one high-signal readout that proves value fast.",
     items: [
       "One pilot workspace",
       "Critical workflow mapping",
@@ -20,19 +20,19 @@ const tiers = [
   {
     name: "Team",
     price: "Custom",
-    body: "Expand from one workflow into a broader system-understanding surface for architecture and platform teams.",
+    body: "Expand from one workflow into broader system visibility for architecture, modernization, and platform teams.",
     items: [
       "Multiple workflows",
-      "Cross-source knowledge graph",
+      "Cross-source intelligence graph",
       "Artifact explorer",
       "Workflow risk scoring",
-      "Broader onboarding support",
+      "Broader team onboarding support",
     ],
   },
   {
     name: "Enterprise",
     price: "Custom",
-    body: "Private deployment, enterprise controls, larger system coverage, and deeper modernization sequencing.",
+    body: "Private deployment, enterprise controls, larger system coverage, and deeper modernization sequencing support.",
     items: [
       "Private deployment path",
       "Role-scoped workspace access",
@@ -48,8 +48,8 @@ export default function PricingPage() {
     <main className="premium-page-shell">
       <Section
         eyebrow="Pricing"
-        title="Enterprise pricing built around pilot-led adoption."
-        description="LegacyBridge is priced around business leverage, workflow clarity, and risk reduction rather than commodity seat-based tooling."
+        title="Enterprise pricing built around strategic leverage."
+        description="LegacyBridge is priced around workflow clarity, risk reduction, and modernization readiness rather than commodity seat-based tooling."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {tiers.map((tier, index) => (
@@ -83,14 +83,14 @@ export default function PricingPage() {
 
       <Section
         eyebrow="Why pricing is custom"
-        title="The right entry point depends on the system, not a seat slider."
-        description="The scope depends on workflow criticality, source complexity, deployment posture, and how quickly the customer needs a credible modernization readout."
+        title="The right scope depends on the system, not a seat slider."
+        description="The engagement depends on workflow criticality, source complexity, deployment posture, and how quickly the customer needs a credible readout."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {[
-            "Some teams need one workflow mapped fast.",
-            "Some need multiple source systems and role-scoped access.",
-            "Some need private deployment and deeper modernization planning.",
+            "Some teams need one workflow mapped quickly to establish trust.",
+            "Some need broader source coverage across docs, jobs, and operational artifacts.",
+            "Some need private deployment and deeper modernization sequencing support.",
           ].map((item, index) => (
             <Reveal key={item} delay={index * 0.05}>
               <div className="premium-surface premium-surface-hover rounded-[1.8rem] p-6 text-sm leading-7 text-white/72">

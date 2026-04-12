@@ -11,44 +11,44 @@ import CaseStudyPlaceholderSection from "@/components/site/CaseStudyPlaceholderS
 
 const pillars = [
   {
-    title: "System intelligence",
-    body: "Turn opaque legacy code, jobs, rules, and operational artifacts into a searchable system understanding layer.",
+    title: "System intelligence for legacy software",
+    body: "LegacyBridge transforms code, jobs, rules, documents, and operational knowledge into a system-level intelligence layer teams can actually work from.",
   },
   {
-    title: "Safer change",
-    body: "Map dependencies, score workflow risk, and generate characterization tests before fragile branches are touched.",
+    title: "Safer change before modernization",
+    body: "Surface dependency risk, generate characterization coverage, and identify fragile branches before expensive modernization work starts.",
   },
   {
-    title: "Modernization leverage",
-    body: "Bridge old expertise to modern teams without forcing blind rewrites or losing embedded business logic.",
+    title: "A bridge between old systems and new teams",
+    body: "Preserve embedded business logic, reduce dependence on retiring experts, and help modern engineers contribute faster inside legacy-heavy environments.",
   },
 ];
 
 const surfaces = [
-  "Natural-language workflow queries",
-  "Business-rule extraction",
-  "Cross-source dependency graphing",
-  "Generated characterization packs",
-  "Knowledge capture from operators",
-  "Executive-readout surfaces",
-  "Workflow risk scoring",
-  "Pilot-to-private deployment path",
+  "Natural-language workflow understanding",
+  "Cross-source dependency and lineage graphing",
+  "Business-rule extraction and clustering",
+  "Generated characterization pack previews",
+  "Knowledge capture from operators and experts",
+  "Executive summary readouts for leadership",
+  "Workflow-level risk scoring and prioritization",
+  "Pilot-to-private enterprise deployment path",
 ];
 
 const signals = [
-  "Reduce dependency on retiring experts",
-  "Shorten legacy workflow discovery time",
-  "Create safer modernization sequencing",
-  "Make undocumented branches visible",
-  "Expand what modern engineers can contribute",
-  "Preserve logic before migration spend begins",
+  "Reduce the time needed to understand one critical workflow",
+  "Make fragile branches visible before they break change programs",
+  "Preserve logic that normally lives only in people and tickets",
+  "Create safer sequencing for modernization work",
+  "Expand what modern engineering teams can contribute",
+  "Lower uncertainty before large rewrite or migration spend",
 ];
 
 const trustItems = [
-  "Private enterprise deployment posture",
-  "Built for brownfield operational reality",
-  "Pilot-led adoption instead of blind rollout",
-  "Outputs readable by both executives and engineers",
+  "Designed for private enterprise deployment paths",
+  "Built for brownfield operational reality, not greenfield demos",
+  "Pilot-first adoption model for high-trust enterprise entry",
+  "Outputs built for both technical teams and executive stakeholders",
 ];
 
 export default function HomePage() {
@@ -68,14 +68,13 @@ export default function HomePage() {
             </div>
 
             <h1 className="max-w-5xl text-5xl font-semibold leading-[0.93] tracking-[-0.06em] text-white sm:text-6xl lg:text-[5.5rem]">
-              Make old systems
-              <span className="block text-white/62">finally understandable.</span>
+              The intelligence layer
+              <span className="block text-white/62">for software nobody can casually replace.</span>
             </h1>
 
             <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
-              LegacyBridge turns brittle legacy software into a living system intelligence layer
-              so teams can understand risk, surface hidden rules, preserve expertise, and modernize
-              with far more control.
+              LegacyBridge helps enterprises understand, stabilize, and modernize critical old systems
+              by turning code, jobs, rules, artifacts, and tribal knowledge into one operating layer.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -87,9 +86,9 @@ export default function HomePage() {
 
             <div className="mt-12 grid gap-4 sm:grid-cols-3">
               {[
-                { value: "Critical", label: "systems handled with care" },
-                { value: "Cross-source", label: "code + docs + ops understanding" },
-                { value: "Pilot-first", label: "adoption path for enterprises" },
+                { value: "Workflow-first", label: "prove value on one critical path" },
+                { value: "Cross-source", label: "code + docs + jobs + knowledge" },
+                { value: "Enterprise-ready", label: "designed for high-trust deployment" },
               ].map((item, index) => (
                 <Reveal key={item.label} delay={index * 0.05}>
                   <div className="rounded-3xl border border-white/10 bg-white/6 p-5 backdrop-blur-md glow-edge">
@@ -112,7 +111,7 @@ export default function HomePage() {
       <Section
         eyebrow="Platform"
         title="A command layer above fragile legacy reality."
-        description="LegacyBridge is built for organizations that cannot casually replace the software underneath their operations, but cannot afford to keep it opaque either."
+        description="LegacyBridge is for organizations that depend on critical old systems but can no longer afford to keep them opaque."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {pillars.map((pillar, index) => (
@@ -135,8 +134,8 @@ export default function HomePage() {
       <section className="section-divider">
         <Section
           eyebrow="Core surfaces"
-          title="Designed for system understanding, not generic code generation."
-          description="The product experience is structured around explainability, dependency visibility, knowledge preservation, and safer decision-making."
+          title="Built for understanding first, not blind automation."
+          description="The product is structured around explainability, visibility, preservation, and safer action inside brownfield environments."
           className="py-0"
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -160,14 +159,14 @@ export default function HomePage() {
             <Reveal delay={0.04}>
               <SignalCardGraphic
                 title="Hidden branch visibility"
-                body="Surface the operational branches, routing paths, and downstream effects that teams rarely see until change fails."
+                body="See the operational branches, routing paths, and downstream dependencies that usually stay invisible until change fails."
                 tone="cyan"
               />
             </Reveal>
             <Reveal delay={0.08}>
               <SignalCardGraphic
                 title="Knowledge continuity"
-                body="Capture what senior operators know before that understanding disappears into ticket history and memory."
+                body="Capture what senior operators know before business-critical system understanding disappears into memory or ticket history."
                 tone="violet"
               />
             </Reveal>
@@ -177,8 +176,8 @@ export default function HomePage() {
 
       <Section
         eyebrow="Operational outcomes"
-        title="Value before rewrite spend."
-        description="LegacyBridge is most useful where critical systems are poorly documented, expertise is concentrated in too few people, and change feels dangerous."
+        title="Create leverage before rewrite spend."
+        description="LegacyBridge is strongest where the system matters, the documentation is weak, and change feels expensive or dangerous."
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {signals.map((signal, index) => (
@@ -199,22 +198,22 @@ export default function HomePage() {
 
       <Section
         eyebrow="Pilot package"
-        title="A focused pilot is the easiest way to prove value."
-        description="LegacyBridge is not trying to boil the ocean on day one. The strongest entry point is one critical workflow, one workspace, and one high-signal readout."
+        title="The right first sale is one workflow, not a giant rollout."
+        description="The fastest way to build trust is to make one fragile workflow legible, useful, and strategically actionable."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {[
             {
               title: "What gets ingested",
-              body: "One important workflow, surrounding source materials, system artifacts, and the most relevant operational context.",
+              body: "One critical workflow, its relevant source materials, operational context, and the artifacts needed to create an accurate signal layer.",
             },
             {
               title: "What gets surfaced",
-              body: "Dependencies, hidden branches, rules, test gaps, expert assumptions, and the first credible modernization path.",
+              body: "Dependencies, hidden rules, branch risk, expert assumptions, coverage gaps, and the safest path forward before broader change begins.",
             },
             {
               title: "What leadership gets",
-              body: "A clearer understanding of risk, where the system is fragile, and where to act first without triggering a blind rewrite.",
+              body: "A credible modernization readout that clarifies where the system is fragile, what should be protected, and where to act first.",
             },
           ].map((item, index) => (
             <Reveal key={item.title} delay={index * 0.05}>
@@ -231,8 +230,8 @@ export default function HomePage() {
 
       <Section
         eyebrow="Trust posture"
-        title="Premium enterprise feel without looking like another AI toy."
-        description="This visual system is meant to communicate control, intelligence, and credibility around fragile infrastructure."
+        title="Made to feel credible in enterprise rooms."
+        description="The visual system, product framing, and pilot structure are all designed to signal control, seriousness, and strategic value."
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {trustItems.map((item, index) => (
@@ -257,11 +256,10 @@ export default function HomePage() {
                   Start with one critical workflow
                 </div>
                 <h3 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
-                  Build clarity before you touch the system.
+                  Build understanding before you change the system.
                 </h3>
                 <p className="mt-5 text-base leading-8 text-white/70">
-                  Use a pilot to map dependencies, surface hidden rules, capture missing knowledge,
-                  and identify the safest modernization path forward.
+                  Use a focused pilot to turn one opaque workflow into a clearer, safer, and more strategic modernization starting point.
                 </p>
               </div>
 

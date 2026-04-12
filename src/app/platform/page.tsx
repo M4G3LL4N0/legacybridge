@@ -9,27 +9,27 @@ import PlatformCommandGraphic from "@/components/graphics/PlatformCommandGraphic
 const modules = [
   {
     title: "Explain",
-    body: "Translate legacy code, files, jobs, and modules into plain-English explanations engineers and leaders can use.",
+    body: "Translate files, jobs, modules, and system behavior into language engineering teams and leadership can work from.",
   },
   {
     title: "Map",
-    body: "Build a dependency graph across programs, jobs, business rules, data flows, copybooks, and operational pathways.",
+    body: "Build a graph across code, jobs, business rules, data flows, copybooks, artifacts, and operational dependencies.",
   },
   {
     title: "Test",
-    body: "Generate characterization tests and regression protections before risky edits or migration activity begins.",
+    body: "Generate characterization coverage and surface regression priorities before risky edits or modernization moves begin.",
   },
   {
     title: "Preserve",
-    body: "Capture tribal knowledge from senior engineers and bind it directly to live system artifacts and workflows.",
+    body: "Capture operator knowledge and bind it directly to live workflows and system objects.",
   },
   {
     title: "Recommend",
-    body: "Score risk and suggest safer next steps: leave in place, wrap with APIs, modularize, or selectively modernize.",
+    body: "Score risk and suggest safer next steps: preserve, wrap, modularize, or selectively modernize.",
   },
   {
     title: "Onboard",
-    body: "Train new engineers on the company’s actual system rather than generic textbook examples.",
+    body: "Help modern teams ramp into real brownfield systems faster instead of relying on fragmented knowledge transfer.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function PlatformPage() {
       <Section
         eyebrow="Platform"
         title="A system intelligence layer for old code."
-        description="LegacyBridge sits above brittle legacy systems and makes them understandable, safer to change, and more realistic to modernize."
+        description="LegacyBridge is built to make high-value legacy systems more understandable, more governable, and safer to evolve."
       >
         <div className="grid gap-6 lg:grid-cols-3">
           {modules.map((module, index) => (
@@ -72,15 +72,15 @@ export default function PlatformPage() {
       </section>
 
       <Section
-        eyebrow="Workflow"
-        title="How a pilot engagement works."
-        description="The first version of the product is built around rapid, high-signal discovery."
+        eyebrow="Pilot motion"
+        title="The platform is designed to prove signal fast."
+        description="The first win is not a massive rollout. It is a clearer understanding of one critical workflow and a better decision about what to do next."
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[
-            "Ingest one critical workflow and its source materials",
+            "Ingest one fragile workflow and its relevant system context",
             "Build a first-pass dependency and rule graph",
-            "Surface hidden logic, test gaps, and fragile branches",
+            "Surface hidden branches, test gaps, and operational risk",
             "Recommend a safer modernization starting point",
           ].map((step, index) => (
             <Reveal key={step} delay={index * 0.04}>
@@ -102,10 +102,10 @@ export default function PlatformPage() {
               <div className="max-w-2xl">
                 <div className="text-sm uppercase tracking-[0.25em] text-cyan-100/58">Next move</div>
                 <h3 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
-                  Start with one system nobody wants to touch.
+                  Start where the system is least understood.
                 </h3>
                 <p className="mt-5 text-base leading-8 text-white/70">
-                  That is usually where the risk is highest and the value of clarity is strongest.
+                  That is usually where the value of visibility, testing, and better sequencing is highest.
                 </p>
               </div>
               <div className="flex flex-col gap-4">
