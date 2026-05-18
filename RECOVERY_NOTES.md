@@ -1,0 +1,22 @@
+# Recovery Notes: Legacybridge
+
+- Startup name: Legacybridge
+- Folder: /Users/joshuadavis/startups/legacybridge
+- One-line description: First run the development server: bash npm run dev # or yarn dev # or pnpm dev # or bun dev Open http://localhost:3000 http://localhost:3000 with your browser to see the result.
+- Target user: Teams that need higher-confidence verification, trust, or compliance workflows.
+- Problem: The product needed clearer positioning, stronger demo readiness, and verified build/deploy hygiene.
+- Solution: An AI-assisted workflow that packages expertise, context, and decisions into a more usable product experience.
+- MVP goal: Make the core legacybridge experience clear, navigable, buildable with pnpm, and ready for manual Vercel deployment.
+- Main pages/routes: No web routes detected.
+- Current state: Buildable pnpm web project with preserved routes and deployment hygiene.
+- Useful work preserved: Existing source, route structure, public assets, docs, package metadata, pnpm lockfile, and env examples were preserved.
+- Broken/drifted areas: No blocking code drift detected during this cycle.
+- Improvements made: Cleaned generated local artifacts after validation (478M -> 2.4M).
+- Build/deploy status: Ready for manual Vercel deployment after fresh pnpm install/build.
+- Large files flagged: None over 25 MB after excluding generated/cache directories.
+- Return-later commands:
+  - pnpm install
+  - pnpm lint
+  - pnpm typecheck
+  - pnpm build
+  - vercel --prod
