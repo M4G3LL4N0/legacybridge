@@ -5,6 +5,7 @@ import DemoNarrativeGraphic from "@/components/graphics/DemoNarrativeGraphic";
 import DemoWorkspaceGraphic from "@/components/graphics/DemoWorkspaceGraphic";
 import PageIntro from "@/components/site/PageIntro";
 import SectionCta from "@/components/site/SectionCta";
+import { LegacyBridgeQuerySim } from "@/components/LegacyBridgeQuerySim";
 
 export default function DemoPage() {
   return (
@@ -70,6 +71,12 @@ export default function DemoPage() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+        <Reveal>
+          <LegacyBridgeQuerySim />
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
