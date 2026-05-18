@@ -12,6 +12,7 @@ const nav = [
   { href: "/app/sources", label: "Sources" },
   { href: "/app/workflows", label: "Workflows" },
   { href: "/app/artifacts", label: "Artifacts" },
+  { href: "/app/notifications", label: "Notifications" },
   { href: "/app/settings", label: "Settings" },
   { href: "/app/reports/executive-summary", label: "Executive Summary" },
 ];

@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import WorkflowLatticeGraphic from "@/components/graphics/WorkflowLatticeGraphic";
 import ProductShowcaseGraphic from "@/components/graphics/ProductShowcaseGraphic";
 import PlatformCommandGraphic from "@/components/graphics/PlatformCommandGraphic";
@@ -35,6 +36,7 @@ const modules = [
 export default function PlatformPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
         <PageIntro
           eyebrow="Platform"

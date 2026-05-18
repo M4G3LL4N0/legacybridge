@@ -1,4 +1,5 @@
 import PageIntro from "@/components/site/PageIntro";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import SectionCta from "@/components/site/SectionCta";
 
 const buyers = [
@@ -31,6 +32,7 @@ const buyers = [
 export default function BuyersPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="Buyers"

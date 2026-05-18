@@ -1,4 +1,5 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 
 const sources = [
@@ -30,7 +31,9 @@ const sources = [
 
 export default function SourcesPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Sources"
@@ -83,5 +86,6 @@ export default function SourcesPage() {
         </Panel>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

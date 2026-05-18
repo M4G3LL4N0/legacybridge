@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import { notFound } from "next/navigation";
 import ProductShell from "@/components/product/ProductShell";
 import Panel from "@/components/product/Panel";
@@ -21,7 +22,9 @@ export default async function WorkflowDetailPage({
   }
 
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Workflow detail"
@@ -158,5 +161,6 @@ export default async function WorkflowDetailPage({
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

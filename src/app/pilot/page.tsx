@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import PageIntro from "@/components/site/PageIntro";
 import SectionCta from "@/components/site/SectionCta";
 import PilotMotionGraphic from "@/components/graphics/PilotMotionGraphic";
@@ -6,6 +7,7 @@ import PilotMotionGraphic from "@/components/graphics/PilotMotionGraphic";
 export default function PilotPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="Pilot"

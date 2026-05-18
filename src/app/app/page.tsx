@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import ProductShell from "@/components/product/ProductShell";
 import ProductStatCard from "@/components/product/ProductStatCard";
 import Panel from "@/components/product/Panel";
@@ -37,7 +38,9 @@ function stageClasses(stage: string) {
 
 export default function ProductAppPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <ProductStatCard label="Systems indexed" value="24" sublabel="Across core business functions" />
@@ -346,5 +349,6 @@ export default function ProductAppPage() {
         />
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

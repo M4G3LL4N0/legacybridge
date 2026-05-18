@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import IndustryFitGraphic from "@/components/graphics/IndustryFitGraphic";
 import PageIntro from "@/components/site/PageIntro";
 import SectionCta from "@/components/site/SectionCta";
@@ -33,6 +34,7 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
         <PageIntro
           eyebrow="Industries"

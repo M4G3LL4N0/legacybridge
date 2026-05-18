@@ -1,4 +1,5 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 import GraphCanvasCard from "@/components/product/GraphCanvasCard";
 import CodeViewerCard from "@/components/product/CodeViewerCard";
@@ -7,7 +8,9 @@ import TestPackPreview from "@/components/product/TestPackPreview";
 
 export default function CommandCenterPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Command center"
@@ -60,5 +63,6 @@ export default function CommandCenterPage() {
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

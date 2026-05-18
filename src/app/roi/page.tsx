@@ -1,4 +1,5 @@
 import PageIntro from "@/components/site/PageIntro";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import SectionCta from "@/components/site/SectionCta";
 
 const levers = [
@@ -23,6 +24,7 @@ const levers = [
 export default function RoiPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="ROI"

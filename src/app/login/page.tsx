@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 
 export default function LoginPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[var(--background)] text-[var(--foreground)] premium-page-shell">
+      <SubpageVisual variant="default" />
       <div className="absolute inset-0 premium-grid opacity-20" />
       <div className="signal-mist signal-mist-a" />
       <div className="signal-mist signal-mist-b" />

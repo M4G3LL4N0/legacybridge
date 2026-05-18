@@ -1,9 +1,11 @@
 import ButtonLink from "@/components/ui/ButtonLink";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import PageIntro from "@/components/site/PageIntro";
 
 export default function ContactPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="contact" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="Contact"

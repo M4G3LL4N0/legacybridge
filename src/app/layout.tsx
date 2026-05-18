@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SiteHeader from "@/components/site/SiteHeader";
 import SiteFooter from "@/components/site/SiteFooter";
+import TrustBanner from "@/components/site/TrustBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://legacybridge.ai"),
@@ -47,6 +48,7 @@ export default function RootLayout({
         <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(245,158,11,0.08),transparent_18%)]" />
           <SiteHeader />
+          <TrustBanner />
           {children}
           <SiteFooter />
         </div>

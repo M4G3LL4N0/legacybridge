@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import PageIntro from "@/components/site/PageIntro";
 import SectionCta from "@/components/site/SectionCta";
 import SecurityPostureGraphic from "@/components/graphics/SecurityPostureGraphic";
@@ -6,6 +7,7 @@ import SecurityPostureGraphic from "@/components/graphics/SecurityPostureGraphic
 export default function SecurityPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="Security"

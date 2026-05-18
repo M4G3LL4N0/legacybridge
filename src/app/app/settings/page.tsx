@@ -1,10 +1,13 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 import SettingsStackGraphic from "@/components/product/SettingsStackGraphic";
 
 export default function SettingsPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <div className="grid gap-6 xl:grid-cols-[1fr_1fr]">
           <Panel eyebrow="Workspace" title="Pilot environment posture">
@@ -43,5 +46,6 @@ export default function SettingsPage() {
         <SettingsStackGraphic />
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

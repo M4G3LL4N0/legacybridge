@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import ProductShell from "@/components/product/ProductShell";
 import Panel from "@/components/product/Panel";
 
@@ -27,7 +28,9 @@ const connectors = [
 
 export default function ConnectorsPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Connectors"
@@ -93,5 +96,6 @@ export default function ConnectorsPage() {
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

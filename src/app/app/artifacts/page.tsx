@@ -1,11 +1,14 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 import ArtifactPreviewCard from "@/components/product/ArtifactPreviewCard";
 import { artifacts } from "@/lib/demo-data";
 
 export default function ArtifactsPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <Panel
         eyebrow="Artifacts"
         title="Indexed materials, generated packs, and system-linked knowledge"
@@ -28,5 +31,6 @@ export default function ArtifactsPage() {
         </div>
       </Panel>
     </ProductShell>
-  );
+  </>
+  )
 }

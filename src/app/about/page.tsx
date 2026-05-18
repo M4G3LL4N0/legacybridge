@@ -1,10 +1,12 @@
 import Reveal from "@/components/site/Reveal";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import PageIntro from "@/components/site/PageIntro";
 import SectionCta from "@/components/site/SectionCta";
 
 export default function AboutPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="about" />
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
         <PageIntro
           eyebrow="About"

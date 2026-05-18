@@ -1,4 +1,5 @@
 import PageIntro from "@/components/site/PageIntro";
+import { SubpageVisual } from "@/components/SubpageVisual";
 
 const updates = [
   {
@@ -21,6 +22,7 @@ const updates = [
 export default function UpdatesPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="default" />
       <section className="page-shell py-20 lg:py-24">
         <PageIntro
           eyebrow="Updates"

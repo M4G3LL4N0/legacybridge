@@ -1,10 +1,13 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import ProductShell from "@/components/product/ProductShell";
 import Panel from "@/components/product/Panel";
 
 export default function OnboardingPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Onboarding"
@@ -72,5 +75,6 @@ export default function OnboardingPage() {
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

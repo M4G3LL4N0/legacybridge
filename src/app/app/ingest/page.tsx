@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import ProductShell from "@/components/product/ProductShell";
 import Panel from "@/components/product/Panel";
 
@@ -11,7 +12,9 @@ const jobs = [
 
 export default function IngestPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Ingest"
@@ -89,5 +92,6 @@ export default function IngestPage() {
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

@@ -1,4 +1,8 @@
 import Reveal from "@/components/site/Reveal";
+import { MarketingGraphicsStack } from "@/components/MarketingGraphicsStack";
+import { ProcessFlowSection } from "@/components/ProcessFlowSection";
+import { HeroProductPanel } from "@/components/HeroProductPanel";
+import { TrustStrip } from "@/components/TrustStrip";
 import ProductPreview from "@/components/site/ProductPreview";
 import Section from "@/components/ui/Section";
 import ButtonLink from "@/components/ui/ButtonLink";
@@ -54,6 +58,10 @@ const trustItems = [
 export default function HomePage() {
   return (
     <main className="premium-page-shell">
+        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
+          <TrustStrip />
+        </div>
+
       <section className="relative overflow-hidden border-b border-white/8">
         <div className="premium-grid absolute inset-0 opacity-20" />
         <div className="signal-mist signal-mist-a" />
@@ -273,6 +281,9 @@ export default function HomePage() {
           </div>
         </Reveal>
       </section>
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6"><HeroProductPanel /></section>
+      <ProcessFlowSection />
+    <MarketingGraphicsStack />
     </main>
   );
 }

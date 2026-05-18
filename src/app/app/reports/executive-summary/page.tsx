@@ -1,9 +1,12 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 
 export default function ExecutiveSummaryPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <div className="space-y-6">
         <Panel
           eyebrow="Executive summary"
@@ -69,5 +72,6 @@ export default function ExecutiveSummaryPage() {
         </div>
       </div>
     </ProductShell>
-  );
+  </>
+  )
 }

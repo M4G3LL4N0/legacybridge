@@ -1,4 +1,5 @@
 import Section from "@/components/ui/Section";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Reveal from "@/components/site/Reveal";
 import PricingValueGraphic from "@/components/graphics/PricingValueGraphic";
@@ -46,6 +47,7 @@ const tiers = [
 export default function PricingPage() {
   return (
     <main className="premium-page-shell">
+      <SubpageVisual variant="pricing" />
       <Section
         eyebrow="Pricing"
         title="Enterprise pricing built around strategic leverage."

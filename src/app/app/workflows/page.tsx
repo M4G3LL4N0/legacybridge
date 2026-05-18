@@ -1,11 +1,14 @@
 import ProductShell from "@/components/product/ProductShell";
+import { SubpageVisual } from "@/components/SubpageVisual";
 import Panel from "@/components/product/Panel";
 import WorkflowGalleryCard from "@/components/product/WorkflowGalleryCard";
 import { workflows } from "@/lib/demo-data";
 
 export default function WorkflowsPage() {
   return (
-    <ProductShell>
+    <>
+    <SubpageVisual variant="default" />
+      <ProductShell>
       <Panel
         eyebrow="Workflows"
         title="Explore priority legacy workflows"
@@ -31,5 +34,6 @@ export default function WorkflowsPage() {
         </div>
       </Panel>
     </ProductShell>
-  );
+  </>
+  )
 }
