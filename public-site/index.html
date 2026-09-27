@@ -11,24 +11,33 @@
 html,body{max-width:100%;overflow-x:hidden}
 h1,h2,p,li,a{overflow-wrap:anywhere}
 
-body { margin:0; background:#e8f5d8; color:#10140f; font:20px/1.4 "Avenir Next", "Segoe UI", sans-serif; }
-.poster { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:28px; box-sizing:border-box; }
-.mark { letter-spacing:.22em; text-transform:uppercase; font-size:12px; color:#b6e36a; }
-h1 { font-size:clamp(46px, 8vw, 92px); line-height:.9; max-width:14ch; margin:12px 0; }
-.poster p:last-of-type { max-width:36rem; color:#10140f; }
-.cta { align-self:flex-start; color:#e8f5d8; background:#b6e36a; text-decoration:none; padding:14px 18px; margin:18px 0 8px; }
-#scope { background:#10140f; color:#e8f5d8; padding:28px; }
+body { margin:0; background:#0e1116; color:#e7eef8; font:17px/1.45 "Palatino Linotype", Palatino, serif; }
+.sheet { max-width:760px; margin:28px auto; background:#161b22; padding:28px; border-top:8px solid #93c5fd; }
+.rule { letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:#93c5fd; }
+h1 { font-size:42px; margin:8px 0; }
+h2 { font-weight:500; font-size:22px; }
+table { width:100%; border-collapse:collapse; margin-top:12px; }
+td, th { border-bottom:1px solid #e7eef8; text-align:left; padding:8px 4px; }
+.cta { display:inline-block; margin-top:16px; color:#0e1116; background:#e7eef8; text-decoration:none; padding:10px 14px; }
+#scope { max-width:760px; margin:0 auto 32px; }
 
 </style>
 </head>
 <body>
 
-<main class="poster">
-  <p class="mark">LegacyBridge · Lab</p>
-  <h1>The intelligence layer for software nobody can casually replace.</h1>
+<article class="sheet">
+  <p class="rule">Lab · ledger</p>
+  <h1>LegacyBridge</h1>
+  <h2>The intelligence layer for software nobody can casually replace.</h2>
   <p>LegacyBridge helps enterprises understand, stabilize, and modernize critical old systems by turning code, jobs, rules, artifacts, and tribal knowledge into one operating layer.</p>
-  <a class="cta" href="#scope">See the boundary</a>
-</main>
-<section id="scope"><h2>Boundary</h2><ol><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ol></section>
+  <table>
+    <tr><th>Field</th><th>Record</th></tr>
+    <tr><td>Customers</td><td>None claimed</td></tr>
+    <tr><td>Metrics</td><td>None claimed</td></tr>
+    <tr><td>Status</td><td>Lab</td></tr>
+  </table>
+  <a class="cta" href="#scope">Read the notes</a>
+</article>
+<section id="scope"><ul><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ul></section>
 </body>
 </html>
