@@ -1,4 +1,5 @@
 import Reveal from "@/components/site/Reveal";
+import { PremiumHeroVisual } from "@/components/premium/PremiumHeroVisual";
 import { MarketingGraphicsStack } from "@/components/MarketingGraphicsStack";
 import { ProcessFlowSection } from "@/components/ProcessFlowSection";
 import { HeroProductPanel } from "@/components/HeroProductPanel";
@@ -12,6 +13,11 @@ import ModernizationRunwayGraphic from "@/components/graphics/ModernizationRunwa
 import SignalCardGraphic from "@/components/graphics/SignalCardGraphic";
 import FaqSection from "@/components/site/FaqSection";
 import CaseStudyPlaceholderSection from "@/components/site/CaseStudyPlaceholderSection";
+import { KissHero } from "@/components/KissHero";
+import { ExpertCouncilUpgrade } from "@/components/ExpertCouncilUpgrade";
+import { DistinctVentureHero } from "@/components/visual/DistinctVentureHero";
+import { DomainCommandGraphic } from "@/components/visual/DomainCommandGraphic";
+import { HeroGraphicPanel } from "@/components/visual/HeroGraphicPanel";
 
 const pillars = [
   {
@@ -57,19 +63,32 @@ const trustItems = [
 
 export default function HomePage() {
   return (
-    <main className="premium-page-shell">
+    <div className="venture-shell venture-shell--emerald-ledger px-4 sm:px-6 lg:px-8">
+      <DistinctVentureHero
+        ventureId="legacybridge"
+        displayName="Legacybridge"
+        worldId="emerald-ledger"
+        heroLayout="terminal"
+        headline={undefined}
+        subheadline={undefined}
+        
+        graphic={<HeroGraphicPanel worldId="emerald-ledger" labels={["Legacybridge Signal","User Wedge","Launch Plan"]} />}
+      />
+      <DomainCommandGraphic ventureId="legacybridge" worldId="emerald-ledger" labels={["Legacybridge Signal","User Wedge","Launch Plan","Approval Gate","Build Status","Next Action"]} />
+      <ExpertCouncilUpgrade />
+
         <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
           <TrustStrip />
         </div>
 
-      <section className="relative overflow-hidden border-b border-white/8">
+      <section className="relative overflow-hidden border-b border-white/8" data-reveal>
         <div className="premium-grid absolute inset-0 opacity-20" />
         <div className="signal-mist signal-mist-a" />
         <div className="signal-mist signal-mist-b" />
         <div className="beam-fade beam-fade-a" />
         <div className="beam-fade beam-fade-b" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 pb-24 pt-18 sm:px-10 lg:grid-cols-[1.02fr_0.98fr] lg:px-12 lg:pb-28 lg:pt-24">
+        <div data-stagger className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 pb-24 pt-18 sm:px-10 lg:grid-cols-[1.02fr_0.98fr] lg:px-12 lg:pb-28 lg:pt-24 px-4 sm:px-6 lg:px-8">
           <Reveal className="max-w-3xl">
             <div className="mb-6 inline-flex items-center rounded-full border border-cyan-300/18 bg-cyan-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-cyan-100">
               Enterprise legacy intelligence
@@ -85,14 +104,17 @@ export default function HomePage() {
               by turning code, jobs, rules, artifacts, and tribal knowledge into one operating layer.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div data-stagger className="mt-10 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href="/demo">Request enterprise walkthrough</ButtonLink>
               <ButtonLink href="/login" variant="secondary">
                 Enter the workspace
               </ButtonLink>
             </div>
+            <p className="mt-5 text-xs leading-6 text-white/45">
+              Pilot-first. No customer logos, win rates, or installed-base figures are claimed on this page.
+            </p>
 
-            <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            <div data-stagger className="mt-12 grid gap-4 sm:grid-cols-3">
               {[
                 { value: "Workflow-first", label: "prove value on one critical path" },
                 { value: "Cross-source", label: "code + docs + jobs + knowledge" },
@@ -121,7 +143,7 @@ export default function HomePage() {
         title="A command layer above fragile legacy reality."
         description="LegacyBridge is for organizations that depend on critical old systems but can no longer afford to keep them opaque."
       >
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div data-stagger className="grid gap-6 lg:grid-cols-3">
           {pillars.map((pillar, index) => (
             <Reveal key={pillar.title} delay={index * 0.05}>
               <article className="premium-surface premium-surface-hover rounded-[1.9rem] p-6">
@@ -133,13 +155,13 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12 px-4 sm:px-6 lg:px-8" data-reveal>
         <Reveal>
           <SystemStrataGraphic />
         </Reveal>
       </section>
 
-      <section className="section-divider">
+      <section className="section-divider" data-reveal>
         <Section
           eyebrow="Core surfaces"
           title="Built for understanding first, not blind automation."
@@ -158,7 +180,7 @@ export default function HomePage() {
         </Section>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 px-4 sm:px-6 lg:px-8" data-reveal>
         <div className="grid gap-6 xl:grid-cols-[1.08fr_0.92fr]">
           <Reveal>
             <LegacyGraphGraphic />
@@ -198,7 +220,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 py-4 sm:px-10 lg:px-12 px-4 sm:px-6 lg:px-8" data-reveal>
         <Reveal>
           <ModernizationRunwayGraphic />
         </Reveal>
@@ -254,7 +276,7 @@ export default function HomePage() {
 
       <FaqSection />
 
-      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12">
+      <section className="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-12 px-4 sm:px-6 lg:px-8" data-reveal>
         <Reveal>
           <div className="premium-surface rounded-[2.2rem] p-8 sm:p-10 lg:p-12">
             <div className="signal-mist signal-mist-c" />
@@ -281,9 +303,15 @@ export default function HomePage() {
           </div>
         </Reveal>
       </section>
-      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6"><HeroProductPanel /></section>
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6" data-reveal>
+        <HeroProductPanel />
+      </section>
       <ProcessFlowSection />
-    <MarketingGraphicsStack />
-    </main>
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+        <PremiumHeroVisual />
+      </div>
+        {/* replaced by DomainCommandGraphic */}
+</div>
+    </div>
   );
 }
