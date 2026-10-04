@@ -1,0 +1,52 @@
+{
+  "project_update_os_version": "v5.3 \"Autonomous Cross-Project Integration & Shared Systems Engine\"",
+  "last_updated": "2026-05-24T22:49:54.392Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com"
+  },
+  "cross_project": {
+    "cross_project_status": "DO_NOT_TOUCH",
+    "cross_project_action_type": "NO_ACTION",
+    "shared_system_decision": "KEEP_PROJECT_SPECIFIC",
+    "cross_project_integration_score": 60,
+    "best_shared_opportunity": "Align missing venture-os files: venture-factory-node.json",
+    "best_pattern_to_reuse_elsewhere": "ExpansionOSPanel pattern (108 projects)",
+    "best_pattern_to_adopt": "Portfolio venture-os core file set from project-update-os",
+    "recommended_worker": "none",
+    "approval_required": false,
+    "verification_required": true,
+    "safe_to_integrate": false,
+    "do_not_share": true
+  },
+  "scores": {
+    "reuse_value_score": 90,
+    "safety_score": 20,
+    "differentiation_protection_score": 40,
+    "maintenance_benefit_score": 74,
+    "implementation_simplicity_score": 60,
+    "proof_score": 40,
+    "duplication_severity_score": 95,
+    "portfolio_fit_score": 76,
+    "risk_score": 15
+  },
+  "next": {
+    "files_to_read": [
+      "venture-cross-project-node.json",
+      "venture-scorecard.json",
+      "venture-continuous-improvement-node.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/"
+    ],
+    "files_to_avoid": [
+      ".env*",
+      "components/premium/*",
+      "components/visual/*"
+    ],
+    "success_condition": "Schema/pattern documented; no unsafe extraction",
+    "stop_condition": "Scope expands to shared package or design sameness",
+    "worker_prompt": "No worker"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "packet_version": "v2.2",
+  "worker_ready": true,
+  "manual_approval_required": false,
+  "manual_deploy_required": true,
+  "manual_git_push_required": true,
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "worker_type": "BUILD_REPAIR_WORKER",
+  "packet_type": "BUILD_REPAIR_PACKET",
+  "safe_automation_level": "LEVEL_1_DOCS_ONLY",
+  "mission": "Fix local build so pnpm build passes.",
+  "task": "Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.",
+  "files_to_read_first": [
+    "venture-os/venture-intelligence.md",
+    "venture-os/venture-intelligence.json",
+    "venture-os/venture-execution-packet.md",
+    "venture-os/venture-verification-gates.md",
+    "venture-os/venture-scorecard.json"
+  ],
+  "files_safe_to_edit": [
+    "app/page.tsx",
+    "src/app/page.tsx",
+    "package.json",
+    "tsconfig.json",
+    "components/",
+    "venture-os/"
+  ],
+  "files_to_avoid": [
+    ".env",
+    ".env.local",
+    "pnpm-lock.yaml"
+  ],
+  "do_not_do": [
+    "vercel --prod",
+    "git push",
+    "rm -rf",
+    "delete routes",
+    "add auth unless packet allows",
+    "add Stripe checkout unless approved",
+    "fake traction or metrics"
+  ],
+  "success_condition": "pnpm build exits 0",
+  "failure_condition": "Requires undeclared secrets",
+  "verification": {
+    "commands": [
+      "pnpm install",
+      "pnpm build",
+      "pnpm lint",
+      "pnpm typecheck"
+    ],
+    "urls": [
+      "https://legacybridge.noaerth.com"
+    ],
+    "flows": [
+      "Homepage loads",
+      "Primary CTA starts intended journey"
+    ],
+    "files": [
+      "venture-update-log.md",
+      "venture-execution-history.md",
+      "venture-scorecard.json",
+      "venture-intelligence.md",
+      "venture-intelligence.json",
+      "venture-compiled-next-action.md"
+    ]
+  },
+  "post_update_files": [
+    "venture-update-log.md",
+    "venture-execution-history.md",
+    "venture-scorecard.json",
+    "venture-intelligence.md",
+    "venture-intelligence.json",
+    "venture-compiled-next-action.md"
+  ],
+  "worker_prompt": "Worker: BUILD_REPAIR_WORKER. legacybridge. Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.. Read venture-autobuilder-packet.json. LEVEL_1_DOCS_ONLY. Verify pnpm build. No deploy."
+}

@@ -1,0 +1,17 @@
+{
+  "venture": "legacybridge",
+  "version": "v1.0",
+  "last_reviewed": "2026-05-22",
+  "existing_docs": [
+    "legacybridge/AGENT_HANDOFF.md",
+    "legacybridge/ARCHITECTURE.md",
+    "legacybridge/CODEBASE_CLEANUP_REPORT.md",
+    "legacybridge/LAUNCH_READINESS_CHECKLIST.md",
+    "legacybridge/README.md",
+    "legacybridge/ROADMAP.md",
+    "legacybridge/ROUTE_INVENTORY.md",
+    "legacybridge/startupjourney.md"
+  ],
+  "build_status": "FAIL",
+  "live_url": "https://legacybridge.noaerth.com"
+}

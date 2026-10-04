@@ -8,7 +8,7 @@ One specific user can complete [primary workflow] with sample data and see a res
 
 ## Test
 
-1. `cd /Users/joshuadavis/startups/legacybridge && pnpm dev`
+1. `cd /Users/matador/startups/legacybridge && pnpm dev`
 2. Open `/` and the main product route (see LOCAL_REVIEW.md)
 3. Complete one end-to-end flow with demo data
 4. Capture one screenshot or export

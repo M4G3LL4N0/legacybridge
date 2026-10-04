@@ -1,0 +1,55 @@
+{
+  "project_update_os_version": "v4.3 \"Autonomous Deployment Readiness & Release Control Engine\"",
+  "last_updated": "2026-05-24T20:15:57.208Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_decision": "PARK",
+    "evidence_status": "EVIDENCE_NOT_NEEDED"
+  },
+  "release": {
+    "release_readiness_status": "RELEASE_DO_NOT_DEPLOY",
+    "release_decision": "NO_RELEASE_NEEDED",
+    "release_risk": "RELEASE_RISK_LOW",
+    "manual_deploy_approval_required": true,
+    "manual_git_push_approval_required": true,
+    "post_deploy_qa_required": false,
+    "can_prepare_release": false,
+    "can_deploy_manually_after_approval": false,
+    "can_git_push_manually_after_approval": false,
+    "release_blocked": false,
+    "release_local_only": true,
+    "do_not_deploy": true
+  },
+  "gates": {
+    "build_release_gate": "NOT_NEEDED",
+    "route_release_gate": "NOT_NEEDED",
+    "live_site_release_gate": "NOT_NEEDED",
+    "public_claim_release_gate": "PASS",
+    "env_release_gate": "MANUAL_REQUIRED",
+    "protected_folder_release_gate": "PASS",
+    "vercel_release_gate": "NOT_NEEDED",
+    "git_release_gate": "NOT_NEEDED",
+    "domain_subdomain_release_gate": "PARTIAL",
+    "post_deploy_qa_gate": "NOT_NEEDED"
+  },
+  "evidence": {
+    "release_evidence_found": [
+      "Release notes file (v4.3)",
+      "Rollback notes file (v4.3)"
+    ],
+    "release_evidence_missing": [
+      "Env file present — founder env review required"
+    ],
+    "release_blockers": [],
+    "rollback_notes_ready": true,
+    "release_notes_ready": true
+  },
+  "next": {
+    "best_release_action": "No release — venture parked",
+    "recommended_worker": "founder",
+    "approval_required": true,
+    "verification_required": true
+  }
+}

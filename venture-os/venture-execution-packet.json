@@ -1,0 +1,106 @@
+{
+  "project_update_os_version": "v2.2 \"Execution Packet Generator\"",
+  "last_updated": "2026-05-24",
+  "packet": {
+    "packet_id": "legacybridge-v2.2-build_repair-20260524-1200",
+    "packet_type": "BUILD_REPAIR_PACKET",
+    "packet_size": "S",
+    "status": "failed",
+    "approval_required": false,
+    "verification_required": true
+  },
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "stage": "STAGE_6_MONETIZABLE",
+    "priority": "P0_CRITICAL",
+    "cycle_state": "READY_FOR_CYCLE",
+    "safe_automation_level": "LEVEL_1_DOCS_ONLY",
+    "recommended_worker": "BUILD_REPAIR_WORKER"
+  },
+  "mission": "Fix local build so pnpm build passes.",
+  "current_context": "Build FAIL; Live loads; LIVE_AHEAD_OF_LOCAL; Product STAGE_3_WORKING_MVP_FLOW; Build broken — not demoable until fixed",
+  "why_this_packet_matters": "FIX_FIRST at STAGE_6_MONETIZABLE",
+  "exact_task": "Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.",
+  "scope": {
+    "files_to_read_first": [
+      "venture-os/venture-intelligence.md",
+      "venture-os/venture-intelligence.json",
+      "venture-os/venture-execution-packet.md",
+      "venture-os/venture-verification-gates.md",
+      "venture-os/venture-scorecard.json"
+    ],
+    "files_safe_to_edit": [
+      "app/page.tsx",
+      "src/app/page.tsx",
+      "package.json",
+      "tsconfig.json",
+      "components/",
+      "venture-os/"
+    ],
+    "files_to_avoid": [
+      ".env",
+      ".env.local",
+      "pnpm-lock.yaml"
+    ],
+    "do_not_do": [
+      "vercel --prod",
+      "git push",
+      "rm -rf",
+      "delete routes",
+      "add auth unless packet allows",
+      "add Stripe checkout unless approved",
+      "fake traction or metrics"
+    ]
+  },
+  "success_criteria": [
+    "pnpm build exits 0"
+  ],
+  "failure_conditions": [
+    "Requires undeclared secrets",
+    "Two consecutive build failures without new hypothesis",
+    "Scope creep beyond packet mission"
+  ],
+  "verification_steps": {
+    "commands": [
+      "pnpm install",
+      "pnpm build",
+      "pnpm lint",
+      "pnpm typecheck"
+    ],
+    "url_checks": [
+      "https://legacybridge.noaerth.com"
+    ],
+    "user_flow_checks": [
+      "Homepage loads",
+      "Primary CTA starts intended journey"
+    ],
+    "file_checks": [
+      "venture-os/venture-intelligence.md",
+      "venture-os/venture-intelligence.json",
+      "venture-os/venture-execution-packet.md",
+      "venture-os/venture-verification-gates.md",
+      "venture-os/venture-scorecard.json"
+    ]
+  },
+  "post_execution_updates_required": [
+    "venture-update-log.md",
+    "venture-execution-history.md",
+    "venture-scorecard.json",
+    "venture-intelligence.md",
+    "venture-intelligence.json",
+    "venture-compiled-next-action.md"
+  ],
+  "prompts": {
+    "cursor": "Cursor, work in /Users/matador/startups/legacybridge. Read venture-os/venture-intelligence.md and venture-execution-packet.md. Mission: Fix local build so pnpm build passes.. Task: Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.. Safe edit: app/page.tsx, src/app/page.tsx, package.json, tsconfig.json, components/. Avoid: .env, .env.local, pnpm-lock.yaml. Do not: vercel --prod; git push; rm -rf; delete routes. Verify: pnpm install; pnpm build; pnpm lint; pnpm typecheck. Success: pnpm build exits 0. Stop if: Requires undeclared secrets. Update venture-update-log.md and venture-execution-history.md. No deploy. No push.",
+    "aider": "In /Users/matador/startups/legacybridge, read venture-execution-packet.md and venture-intelligence.json. Task only: Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.. Edit: app/page.tsx, src/app/page.tsx, package.json, tsconfig.json, components/, venture-os/. Avoid .env, .env.local, pnpm-lock.yaml. Do not vercel --prod, git push, rm -rf. Success: pnpm build exits 0. pnpm build. Update venture-execution-history.md. No deploy.",
+    "autobuilder_worker": "Worker: BUILD_REPAIR_WORKER. legacybridge. Run pnpm install && pnpm build in legacybridge. Fix the first blocking error in app/page.tsx, imports, or tsconfig. Stop after build PASS or 2 failed attempts.. Read venture-autobuilder-packet.json. LEVEL_1_DOCS_ONLY. Verify pnpm build. No deploy."
+  },
+  "verification": {
+    "harness_version": "v2.3",
+    "last_verified": "2026-05-24",
+    "verification_status": "VERIFICATION_FAILED",
+    "can_mark_complete": false
+  }
+}

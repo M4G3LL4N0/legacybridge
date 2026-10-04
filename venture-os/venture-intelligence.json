@@ -1,0 +1,109 @@
+{
+  "project_update_os_version": "v2.1 \"Venture Intelligence Compiler\"",
+  "last_updated": "2026-05-24",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "category": "AI agents",
+    "stage": "STAGE_3_BUILDABLE",
+    "operating_status": "RECOVERY_REQUIRED",
+    "founder_priority": "FIX_FIRST",
+    "cycle_state": "READY_FOR_CYCLE",
+    "recommended_worker": "BUILD_REPAIR_WORKER",
+    "safe_automation_level": "LEVEL_1_DOCS_ONLY"
+  },
+  "summary": {
+    "one_line": "System intelligence for legacy software",
+    "plain_english": "System intelligence for legacy software",
+    "current_reality": "Build FAIL; Live loads; LIVE_AHEAD_OF_LOCAL; Product STAGE_3_WORKING_MVP_FLOW; Build broken — not demoable until fixed",
+    "strongest_version": "System intelligence for legacy software — with working Start an automation run and review the output log and honest proof events."
+  },
+  "customer": {
+    "primary_customer": "Operations leaders and technical founders",
+    "problem": "Teams cannot verify identity, claims, or risk fast enough for high-stakes decisions.",
+    "product_promise": "Start an automation run and review the output log",
+    "core_user_action": "Start an automation run and review the output log",
+    "mvp_proof": "User completes demo path and submits request or saves an artifact"
+  },
+  "product": {
+    "product_stage": "STAGE_3_WORKING_MVP_FLOW",
+    "demo_readiness": "65",
+    "customer_readiness": "63",
+    "investor_readiness": "80",
+    "primary_output": "",
+    "missing_product_layer": "- Deeper workflow states (empty/error/success)"
+  },
+  "technical": {
+    "framework": "Next.js (16.2.3)",
+    "package_manager": "pnpm",
+    "build_status": "FAIL",
+    "safe_edit_level": "2",
+    "dependency_risks": [],
+    "env_risks": [],
+    "verification_commands": [
+      "cd /Users/matador/startups/legacybridge",
+      "pnpm install",
+      "pnpm build"
+    ]
+  },
+  "live_site": {
+    "status": "loads",
+    "local_vs_live_status": "LIVE_AHEAD_OF_LOCAL",
+    "homepage_clarity": "60",
+    "cta_status": "90",
+    "mobile_status": "69",
+    "public_risks": []
+  },
+  "design": {
+    "primary_design_lane": "Financial Intelligence Terminal",
+    "secondary_design_lane": "AI Command Center",
+    "visual_metaphor": "Bloomberg-like clarity for operators",
+    "signature_visual_element": "Live risk/opportunity meter",
+    "differentiation_rule": ""
+  },
+  "business": {
+    "business_model": "Subscription SaaS",
+    "first_dollar_path": "Fix product surface, then sell a 2-week paid pilot to 1 design partner",
+    "pricing_logic": "",
+    "monetization_blocker": "",
+    "moat": "Candidate"
+  },
+  "control": {
+    "biggest_risk": "pnpm build fails",
+    "biggest_opportunity": "Becomes valuable after build passes",
+    "best_next_action": "Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build",
+    "why_this_action": "FIX_FIRST at STAGE_6_MONETIZABLE",
+    "founder_decision_needed": false,
+    "approval_needed": false,
+    "verification_required": true,
+    "park_recommendation": "Fix first"
+  },
+  "context": {
+    "files_to_read_first": [
+      "venture-intelligence.md",
+      "venture-intelligence.json",
+      "venture-compiled-next-action.md",
+      "venture-scorecard.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/",
+      "app/",
+      "src/app/",
+      "components/"
+    ],
+    "files_to_avoid": [
+      ".env",
+      ".env.local",
+      "pnpm-lock.yaml"
+    ],
+    "missing_context": [],
+    "conflicting_context": [],
+    "stale_context": []
+  },
+  "prompts": {
+    "cursor_prompt": "In /Users/matador/startups/legacybridge, read venture-intelligence.json. Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build. Update venture-intelligence after. No deploy.",
+    "aider_prompt": "Read venture-intelligence.md + venture-compiled-next-action.md. Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build. pnpm build to verify. No deploy.",
+    "autobuilder_worker_prompt": "Worker: BUILD_REPAIR_WORKER. Venture: legacybridge. Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build. Read venture-intelligence.json. LEVEL_1_DOCS_ONLY. Verify pnpm build."
+  }
+}

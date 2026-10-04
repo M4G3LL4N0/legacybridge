@@ -1,0 +1,28 @@
+{
+  "project_update_os_version": "v3.6 \"Autonomous Data Model & Signal Capture Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "data_model_maturity": "DATA_DOCS_ONLY",
+  "storage_mode": "MARKDOWN_LOG",
+  "demand_signal_score": 17,
+  "evidence_confidence_score": 0,
+  "best_signal_type": "BUILD_SIGNAL",
+  "best_signal_action": "Capture BUILD_SIGNAL in venture-telemetry.json — fix build before demand tests",
+  "worker_allowed": false,
+  "recommended_worker": "Cursor",
+  "approval_required": true,
+  "verification_required": true,
+  "files_to_read": [
+    "venture-os/venture-data-signal-node.md",
+    "venture-os/venture-signal-capture-next-action.md"
+  ],
+  "files_safe_to_edit": [
+    "venture-os/venture-customer-signal-capture.md",
+    "venture-os/venture-update-log.md"
+  ],
+  "files_to_avoid": [
+    ".env",
+    "supabase/migrations"
+  ],
+  "worker_prompt": "Capture BUILD_SIGNAL in venture-telemetry.json — fix build before demand tests"
+}

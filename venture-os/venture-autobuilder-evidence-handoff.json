@@ -1,0 +1,26 @@
+{
+  "project_update_os_version": "v4.2 \"Autonomous Verification Evidence & Audit Trail Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "evidence_status": "EVIDENCE_NOT_NEEDED",
+  "audit_decision": "ALLOW_NEXT_RUN",
+  "can_mark_complete": false,
+  "can_allow_next_run": true,
+  "can_promote_stage": false,
+  "can_update_public_portfolio": false,
+  "can_update_investor_room": false,
+  "evidence_confidence_score": 38,
+  "evidence_missing": [
+    "BROWSER_CHECK: manual browser QA not logged",
+    "SCREENSHOT_REVIEW: screenshots not reviewed"
+  ],
+  "manual_evidence_required": true,
+  "screenshot_required": true,
+  "command_result_required": true,
+  "qa_required": true,
+  "best_evidence_action": "No evidence action — parked",
+  "approval_required": false,
+  "verification_required": true,
+  "worker_prompt": "Gather evidence: No evidence action — parked. Do not mark complete without proof."
+}

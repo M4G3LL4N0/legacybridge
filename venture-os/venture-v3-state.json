@@ -1,0 +1,102 @@
+{
+  "project_update_os_version": "v3.0 \"Autonomous Venture Studio Kernel\"",
+  "last_updated": "2026-05-24",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "category": "venture",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "operating_status": "needs_recovery",
+    "resource_mode": "FIX",
+    "kernel_mode": "RECOVERY_KERNEL",
+    "founder_priority": "medium",
+    "cycle_state": "QUARANTINED"
+  },
+  "scores": {
+    "overall_score": 38,
+    "technical_health_score": 59,
+    "live_site_score": 72,
+    "intelligence_confidence_score": 75,
+    "execution_packet_score": 70,
+    "verification_score": 50,
+    "stage_confidence_score": 70,
+    "roi_score": 49,
+    "customer_signal_score": 63,
+    "revenue_signal_score": 6,
+    "growth_signal_score": 20,
+    "investor_readiness_score": 6,
+    "risk_score": 90,
+    "opportunity_score": 42
+  },
+  "state": {
+    "build_status": "FAIL",
+    "live_status": "partial",
+    "verification_status": "VERIFICATION_FAILED",
+    "stage_decision": "DEMOTE",
+    "validation_readiness": "VALIDATION_NOT_READY",
+    "monetization_readiness": "MONETIZATION_NOT_READY",
+    "growth_readiness": "GROWTH_NOT_READY",
+    "investor_readiness_level": "INVESTOR_NOT_READY",
+    "showcase_decision": "DO_NOT_SHOW",
+    "park_recommendation": "no",
+    "quarantine_recommendation": "yes"
+  },
+  "decision": {
+    "kernel_decision": "QUARANTINE",
+    "best_next_action": "Fix build error in src/app/page.tsx — approval before pnpm install",
+    "recommended_worker": "manual",
+    "recommended_packet_type": "BUILD_RECOVERY_PACKET",
+    "approval_required": true,
+    "verification_required": true,
+    "founder_decision_required": true,
+    "do_not_touch": true
+  },
+  "proof": {
+    "strongest_proof": "Documentation only",
+    "weakest_proof": "Customer signal",
+    "missing_proof": [
+      "customer validation",
+      "revenue test",
+      "growth channel"
+    ],
+    "unsafe_claims": [],
+    "next_proof_to_create": "Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build"
+  },
+  "controls": {
+    "files_to_read_first": [
+      "venture-v3-kernel.md",
+      "venture-scorecard.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/"
+    ],
+    "files_to_avoid": [
+      ".env",
+      ".env.local"
+    ],
+    "commands_allowed": [
+      "pnpm build",
+      "pnpm lint"
+    ],
+    "commands_forbidden": [
+      "git reset --hard",
+      "git clean -fd",
+      "rm -rf",
+      "vercel --prod",
+      "git push --force"
+    ],
+    "manual_only_actions": [
+      "deploy",
+      "push",
+      "outreach",
+      "payments"
+    ]
+  },
+  "handoff": {
+    "cursor_prompt": "",
+    "aider_prompt": "",
+    "autobuilder_worker_prompt": "Do not dispatch — quarantined",
+    "founder_prompt": "Review legacybridge quarantine/recovery"
+  }
+}

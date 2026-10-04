@@ -1,0 +1,29 @@
+{
+  "project_update_os_version": "v3.9 \"Autonomous Investor Room & Private Diligence Engine\"",
+  "last_updated": "2026-05-24T06:15:30.295Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "Do not touch — parked/quarantined"
+  },
+  "investor_room": {
+    "visibility_level": "INVESTOR_ROOM_PARKED",
+    "sections": [
+      "Appendix"
+    ],
+    "proof_level": "PROOF_PROTOTYPE",
+    "investor_safe_one_liner": "Headline: what Legacybridge does in 8 words",
+    "investor_safe_description": "LegacyBridge transforms legacy systems into a system intelligence layer for safer change, clearer modernization sequencing, and pilot-led enterprise adoption.",
+    "demo_use": "exclude",
+    "demo_order_score": 40,
+    "diligence_readiness_score": 27,
+    "proof_confidence_score": 5,
+    "risk_transparency_score": 60,
+    "claim_safety_score": 85,
+    "private_metrics_ready": true,
+    "approval_required": false,
+    "recommended_action": "Prepare brief for later inclusion"
+  }
+}

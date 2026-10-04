@@ -1,0 +1,11 @@
+{
+  "project_update_os_version": "v3.0 \"Autonomous Venture Studio Kernel\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "worker_type": "MANUAL",
+  "mission": "Fix build error in src/app/page.tsx — approval before pnpm install",
+  "safe_automation_level": "none",
+  "approval_required": true,
+  "verification_required": true,
+  "prompt": "Do not dispatch"
+}

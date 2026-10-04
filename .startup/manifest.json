@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "name": "legacybridge",
+  "slug": "legacybridge",
+  "type": "software",
+  "status": "discovered",
+  "stage": "mvp",
+  "root": "/Users/matador/startups/legacybridge",
+  "description": "Software project with react frontend",
+  "stack": {
+    "languages": [
+      "typescript",
+      "javascript"
+    ],
+    "frontend": "react",
+    "frameworks": [],
+    "tools": [
+      "typescript",
+      "eslint",
+      "dev",
+      "build",
+      "lint"
+    ]
+  },
+  "packageManager": "pnpm",
+  "commands": {
+    "dev": "pnpm run dev",
+    "build": "pnpm run build",
+    "lint": "pnpm run lint",
+    "typecheck": "pnpm run typecheck",
+    "custom": {
+      "start": "pnpm run start"
+    }
+  },
+  "git": {
+    "isRepo": true,
+    "branch": "main",
+    "remote": "https://github.com/M4G3LL4N0/legacybridge.git",
+    "status": "unknown"
+  },
+  "environment": {
+    "hasDocker": false,
+    "hasDockerCompose": false,
+    "envFiles": [
+      ".env.local"
+    ],
+    "secretsDetected": true
+  },
+  "agents": {
+    "primary": "coding",
+    "roles": [
+      "coding",
+      "research",
+      "testing"
+    ],
+    "maxConcurrent": 3,
+    "workspaceIsolation": true
+  },
+  "models": {
+    "simple": "local",
+    "coding": "openrouter",
+    "reasoning": "premium",
+    "research": "openrouter",
+    "fallback": "local"
+  },
+  "autonomy": {
+    "gitRead": "allowed",
+    "gitWrite": "allowed",
+    "gitCommit": "approval_required",
+    "gitPush": "approval_required",
+    "deploy": "approval_required",
+    "destructiveOps": "approval_required",
+    "externalServices": "approval_required",
+    "crossStartupAccess": "approval_required",
+    "systemDirs": "approval_required"
+  },
+  "budget": {
+    "monthlyTokens": 1000000,
+    "dailyTokens": 50000,
+    "taskTokens": 10000,
+    "monthlyCostUsd": 50,
+    "dailyCostUsd": 5,
+    "alertThreshold": 0.8
+  },
+  "security": {
+    "allowSecretsInContext": false,
+    "redactSecrets": true,
+    "allowedPaths": [],
+    "deniedPaths": [
+      ".ssh",
+      ".aws",
+      ".config",
+      ".gnupg",
+      "node_modules",
+      ".git"
+    ],
+    "requireApprovalFor": [
+      "deploy",
+      "destructive",
+      "external",
+      "cross-startup"
+    ]
+  },
+  "metadata": {
+    "discoveredConfidence": 55,
+    "signals": [
+      "package.json",
+      "README.md",
+      "next.config.ts",
+      "tsconfig.json"
+    ]
+  },
+  "discoveredAt": "2026-08-15T23:08:59.109Z",
+  "updatedAt": "2026-08-15T23:08:59.109Z"
+}

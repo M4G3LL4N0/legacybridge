@@ -1,0 +1,33 @@
+{
+  "project_update_os_version": "v3.8 \"Autonomous Public Portfolio & Venture Card Intelligence Engine\"",
+  "last_updated": "2026-05-24T06:11:21.241Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "Fix build error in src/app/page.tsx — approval before pnpm install"
+  },
+  "public_portfolio": {
+    "public_visibility_level": "PUBLIC_PARKED",
+    "public_card_category": [
+      "AI Tools",
+      "Paused"
+    ],
+    "public_status_label": "Paused",
+    "public_one_liner": "Headline: what Legacybridge does in 8 words",
+    "public_description": "LegacyBridge transforms legacy systems into a system intelligence layer for safer change, clearer modernization sequencing, and pilot-led enterprise adoption.",
+    "public_cta_type": "NO_PUBLIC_CTA",
+    "public_cta_label": "—",
+    "public_cta_target": "",
+    "screenshot_needed": false,
+    "visual_needed": false,
+    "claim_safety": "safe",
+    "card_quality_score": 20,
+    "card_uniformity_score": 80,
+    "card_differentiation_score": 15,
+    "mobile_card_score": 69,
+    "approval_required": false,
+    "recommended_public_action": "Exclude from public portfolio grid"
+  }
+}

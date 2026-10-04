@@ -1,0 +1,80 @@
+{
+  "project_update_os_version": "v3.5 \"Autonomous Shared Infrastructure & Platform Layer Engine\"",
+  "last_updated": "2026-05-24T05:50:10.451Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "Fix build error in src/app/page.tsx — approval before pnpm install"
+  },
+  "platform_role": "consumer",
+  "needs": {
+    "auth": [
+      "user accounts or admin"
+    ],
+    "database": [
+      "leads",
+      "submissions",
+      "user data"
+    ],
+    "forms": [
+      "waitlist",
+      "contact",
+      "quote"
+    ],
+    "analytics": [
+      "CTA click",
+      "form submit"
+    ],
+    "payments": [],
+    "email_notifications": [
+      "confirmation",
+      "founder alert"
+    ],
+    "storage": [
+      "uploads",
+      "exports"
+    ],
+    "queues_workers": [],
+    "admin_dashboard": [
+      "leads",
+      "metrics"
+    ],
+    "design_primitives": [
+      "hero",
+      "cta",
+      "cards"
+    ],
+    "product_primitives": [
+      "**Start an automation run and review the output log**"
+    ],
+    "qa_utilities": [
+      "manual browser script",
+      "screenshot review"
+    ],
+    "telemetry_logging": [
+      "heartbeat",
+      "build status",
+      "QA status"
+    ],
+    "env_patterns": [],
+    "api_server_actions": [
+      "form submit",
+      "demo generate"
+    ]
+  },
+  "platformization": {
+    "platformization_score": 32,
+    "reuse_value_score": 70,
+    "risk_score": 75,
+    "differentiation_risk_score": 35,
+    "maintenance_score": 75,
+    "verification_score": 35,
+    "best_platform_decision": "PLATFORMIZE_LATER",
+    "best_platformization_type": "PATTERN_LIBRARY",
+    "best_platform_action": "Fix build before platform reuse — see recovery packet",
+    "approval_required": false,
+    "verification_required": true
+  }
+}

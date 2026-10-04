@@ -1,0 +1,31 @@
+{
+  "project_update_os_version": "v3.4 \"Portfolio Knowledge Graph & Cross-Venture Synergy Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "synergy_score": 51,
+  "best_synergy_type": "DUPLICATION_RISK",
+  "best_synergy_action": "Review duplicate overlap with legacybridge; consider park weaker venture",
+  "related_ventures": [
+    "1bc",
+    "access-layer",
+    "behindcurtain",
+    "bioyield-labs",
+    "cleanstack-os"
+  ],
+  "worker_allowed": false,
+  "recommended_worker": "manual",
+  "approval_required": true,
+  "verification_required": true,
+  "files_to_read": [
+    "venture-knowledge-graph-node.json",
+    "venture-synergy-next-action.md"
+  ],
+  "files_safe_to_edit": [
+    "venture-os/*.md"
+  ],
+  "files_to_avoid": [
+    "../**",
+    "package.json unless approved"
+  ],
+  "worker_prompt": "Read venture-synergy-next-action.md. Review duplicate overlap with legacybridge; consider park weaker venture. No merge. No file moves without approval."
+}

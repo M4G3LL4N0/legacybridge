@@ -1,0 +1,81 @@
+{
+  "project_update_os_version": "v3.2 \"Autonomous Recovery & Rollback Engine\"",
+  "last_updated": "2026-05-24",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "Fix build: cd /Users/matador/startups/legacybridge && pnpm install && pnpm build",
+    "heartbeat_status": "BROKEN",
+    "alert_severity": "P1"
+  },
+  "recovery": {
+    "recovery_status": "RECOVERY_BLOCKED",
+    "safety_lock_level": "LOCK_4_QUARANTINED",
+    "quarantine_recommended": true,
+    "rollback_review_required": true,
+    "rollback_recommended": false,
+    "manual_review_required": true,
+    "approval_required": true,
+    "verification_required": true
+  },
+  "diagnosis": {
+    "issue_type": "build",
+    "what_broke": "pnpm build FAIL",
+    "likely_root_cause": "TypeScript/JSX, import, or config error — see verification harness",
+    "evidence": [
+      "build_status: FAIL",
+      "verification: VERIFICATION_FAILED",
+      "route: src/app/page.tsx",
+      "lockfiles: pnpm-lock.yaml"
+    ],
+    "risk_level": "medium",
+    "impact_level": "high"
+  },
+  "scope": {
+    "files_to_inspect_first": [
+      "src/app/page.tsx",
+      "package.json",
+      "venture-os/venture-verification-harness.md",
+      "venture-os/venture-recovery-plan.md"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/*.md",
+      "src/app/page.tsx",
+      "package.json",
+      "tsconfig.json"
+    ],
+    "files_to_avoid": [
+      ".env",
+      ".env.local",
+      "node_modules/",
+      "pnpm-lock.yaml (unless approved)"
+    ],
+    "commands_allowed": [
+      "pnpm install (approval required)",
+      "pnpm build (after fix)",
+      "pnpm dev (verify locally)"
+    ],
+    "commands_forbidden": [
+      "git reset --hard",
+      "git clean -fd",
+      "rm -rf",
+      "vercel rollback",
+      "vercel --prod",
+      "git push --force"
+    ]
+  },
+  "plan": {
+    "best_recovery_action": "Fix build error in src/app/page.tsx — approval before pnpm install",
+    "recommended_worker": "Aider",
+    "recovery_packet_type": "BUILD_RECOVERY_PACKET",
+    "success_condition": "Build PASS + verification checks pass",
+    "failure_condition": "New errors or secrets exposed",
+    "verification_steps": [
+      "pnpm build",
+      "inspect homepage route",
+      "update recovery-verification.md"
+    ]
+  }
+}

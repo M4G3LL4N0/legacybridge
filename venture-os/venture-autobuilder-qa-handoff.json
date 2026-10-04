@@ -1,0 +1,43 @@
+{
+  "project_update_os_version": "v3.3 \"Autonomous QA Browser & Product Flow Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "qa_status": "QA_NOT_READY",
+  "qa_scope": "QA_SCOPE_INTERNAL",
+  "qa_score": 25,
+  "worker_allowed": false,
+  "recommended_worker": "Aider",
+  "qa_packet_type": "BROWSER_QA_PACKET",
+  "mission": "Fix build before browser QA — see venture-recovery-packet.md",
+  "urls_to_test": [
+    "https://legacybridge.noaerth.com"
+  ],
+  "viewports": [
+    "390px",
+    "430px",
+    "1440px"
+  ],
+  "click_path": [
+    "Open URL",
+    "Read hero",
+    "Click Get started",
+    "Verify destination"
+  ],
+  "pass_criteria": [
+    "No 404",
+    "CTA works",
+    "Mobile OK",
+    "Claims safe"
+  ],
+  "fail_criteria": [
+    "404",
+    "Broken CTA",
+    "Unsafe claims"
+  ],
+  "manual_browser_required": true,
+  "screenshot_review_required": true,
+  "approval_required": false,
+  "verification_required": true,
+  "worker_prompt": "Manual QA at https://legacybridge.noaerth.com. Viewports 390px + 1440px. Click \"Get started\". Record pass/fail. No deploy."
+}

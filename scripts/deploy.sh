@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-cd /Users/joshuadavis/startups/legacybridge
+cd /Users/matador/startups/legacybridge
 rm -rf .next
 npm run build
 git add .

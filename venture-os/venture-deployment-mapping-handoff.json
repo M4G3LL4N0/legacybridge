@@ -1,0 +1,10 @@
+{
+  "project_update_os_version": "v5.6 \"Autonomous Domain, Vercel & Deployment Mapping Intelligence Engine\"",
+  "folder": "legacybridge",
+  "expected_live_url": "https://legacybridge.noaerth.com",
+  "expected_vercel_project": "legacybridge",
+  "expected_github_repo": "startups/legacybridge",
+  "mission": "Complete deployment mapping packet and manual Vercel/Git checks",
+  "worker": "none",
+  "prompt": "No worker"
+}

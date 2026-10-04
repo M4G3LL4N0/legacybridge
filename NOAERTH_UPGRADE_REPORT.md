@@ -1,21 +1,19 @@
-# NOAERTH Upgrade Report — legacybridge
+# Noaerth Upgrade Report: Legacybridge
 
-- **Folder:** `/Users/joshuadavis/startups/legacybridge`
-- **Classification:** real startup project
-- **Reality label:** VERIFIED (build) + DEMO (query sim)
-- **Score:** 70 | **Stage:** interactive demo | **Proof:** demo proof | **Priority:** P2
-- **Mode:** MVP REALITY — `LegacyBridgeQuerySim` on `/demo`
-- **Build:** PASS (`pnpm build`, Hyperion v6)
-- **Deployment:** no deployment was run
+**Edition:** PhoenixLoop v14.0 — Portfolio Recovery and Execution System  
+**Date:** 2026-05-19  
+**Classification:** real startup project — package.json at root  
+**Score:** 70/100 | **Stage:** working MVP | **Priority:** P1
 
-## Local review
-```bash
-cd /Users/joshuadavis/startups/legacybridge && pnpm dev
-```
-`/demo` → run demo query, read DEMO systems/risk/tests.
+## Mode
+Primary: LOCAL REVIEW READINESS
 
-## Blocker
-None.
+## Done this loop
+- PHOENIXLOOP_REPORT.md refreshed
+- CLAIM_REGISTER.md / LAUNCH_READINESS.md updated
+- startupjourney.md PhoenixLoop section
+- Build: PASS
 
 ## Next
-Connect sim output to real ingest graph when backend ready.
+1. Walk homepage + ship one demo path with DEMO labels
+2. `node noaerth/scripts/phoenixloop-v14-portfolio.mjs --build`

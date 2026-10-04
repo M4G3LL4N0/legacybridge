@@ -1,0 +1,62 @@
+{
+  "project_update_os_version": "v4.2 \"Autonomous Verification Evidence & Audit Trail Engine\"",
+  "last_updated": "2026-05-24T20:00:13.457Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_decision": "PARK",
+    "scheduler_status": "SCHEDULER_PARKED",
+    "last_worker": "PARKING_WORKER"
+  },
+  "evidence": {
+    "evidence_status": "EVIDENCE_NOT_NEEDED",
+    "audit_decision": "ALLOW_NEXT_RUN",
+    "can_mark_complete": false,
+    "can_allow_next_run": true,
+    "can_promote_stage": false,
+    "can_update_public_portfolio": false,
+    "can_update_investor_room": false,
+    "evidence_confidence_score": 38,
+    "evidence_gap_count": 2,
+    "manual_evidence_required": true,
+    "screenshot_required": true,
+    "command_result_required": true,
+    "qa_required": true
+  },
+  "records": {
+    "evidence_found": [
+      "FILE_INSPECTED: venture-production-node.json",
+      "FILE_INSPECTED: venture-execution-scheduler-node.json",
+      "FILE_INSPECTED: venture-update-log.md",
+      "RUN_HISTORY_ENTRY: v4.0/v4.1 OS cycle logged",
+      "QA_REVIEW: verification mentioned in update log"
+    ],
+    "evidence_missing": [
+      "BROWSER_CHECK: manual browser QA not logged",
+      "SCREENSHOT_REVIEW: screenshots not reviewed"
+    ],
+    "evidence_conflicts": [],
+    "stale_evidence": [],
+    "manual_checks_needed": [
+      "Browser QA",
+      "CTA check"
+    ],
+    "files_inspected": [
+      "venture-production-node.json",
+      "venture-execution-scheduler-node.json",
+      "venture-update-log.md"
+    ],
+    "commands_needed": [
+      "pnpm build",
+      "pnpm lint"
+    ]
+  },
+  "next": {
+    "best_evidence_action": "No evidence action — parked",
+    "recommended_worker": "manual",
+    "approval_required": false,
+    "verification_required": true,
+    "next_run_allowed": true
+  }
+}

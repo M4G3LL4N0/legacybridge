@@ -1,0 +1,48 @@
+{
+  "project_update_os_version": "v4.5 \"Autonomous Growth Distribution & Channel Experiment Control Engine\"",
+  "last_updated": "2026-05-24T20:28:08.333Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_status": "PARKED",
+    "release_readiness": "RELEASE_DO_NOT_DEPLOY",
+    "validation_readiness": "VALIDATION_PARKED"
+  },
+  "growth": {
+    "growth_readiness": "GROWTH_PARKED",
+    "growth_decision": "PARK_GROWTH",
+    "best_channel": "MANUAL_AUDIENCE_DISCOVERY",
+    "second_channel": "CONTENT",
+    "target_audience": "Early adopters interested in Legacybridge",
+    "growth_message_hypothesis": "Legacybridge: solve one clear pain — sharpen before growth",
+    "growth_cta": "Give feedback",
+    "growth_signal_score": 41,
+    "channel_fit_score": 40,
+    "audience_clarity_score": 45,
+    "message_clarity_score": 45,
+    "cta_readiness_score": 35,
+    "growth_risk": "low",
+    "manual_posting_approval_required": true,
+    "manual_outreach_approval_required": true,
+    "do_not_post_automatically": true,
+    "do_not_send_automatically": true,
+    "do_not_scrape": true,
+    "do_not_use_paid_ads": true
+  },
+  "next": {
+    "best_growth_action": "No growth — venture parked",
+    "recommended_worker": "founder",
+    "files_to_read": [
+      "venture-growth-distribution-node.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/**"
+    ],
+    "files_to_avoid": [
+      ".env"
+    ],
+    "success_condition": "Draft growth plan logged",
+    "stop_condition": "No post/send/scrape/ads"
+  }
+}

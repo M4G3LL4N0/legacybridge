@@ -1,0 +1,48 @@
+{
+  "project_update_os_version": "v3.2 \"Autonomous Recovery & Rollback Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "recovery_status": "RECOVERY_BLOCKED",
+  "safety_lock_level": "LOCK_4_QUARANTINED",
+  "quarantine_recommended": true,
+  "rollback_review_required": true,
+  "worker_allowed": false,
+  "recommended_worker": "Aider",
+  "recovery_packet_type": "BUILD_RECOVERY_PACKET",
+  "mission": "Fix build error in src/app/page.tsx — approval before pnpm install",
+  "files_to_read": [
+    "venture-recovery-engine.md",
+    "venture-recovery-packet.md",
+    "venture-safety-lock.md"
+  ],
+  "files_safe_to_edit": [
+    "venture-os/*.md",
+    "src/app/page.tsx",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "files_to_avoid": [
+    ".env",
+    ".env.local",
+    "node_modules/",
+    "pnpm-lock.yaml (unless approved)"
+  ],
+  "commands_allowed": [
+    "pnpm install (approval required)",
+    "pnpm build (after fix)",
+    "pnpm dev (verify locally)"
+  ],
+  "commands_forbidden": [
+    "git reset --hard",
+    "git clean -fd",
+    "rm -rf",
+    "vercel rollback",
+    "vercel --prod",
+    "git push --force"
+  ],
+  "approval_required": true,
+  "verification_required": true,
+  "success_condition": "Build PASS + verification updated",
+  "failure_condition": "New errors or policy violation",
+  "worker_prompt": "Read venture-os/venture-recovery-engine.md and venture-broken-build-recovery.md. Fix build only: Fix build error in src/app/page.tsx — approval before pnpm install. pnpm build must pass. No deploy/push/delete."
+}

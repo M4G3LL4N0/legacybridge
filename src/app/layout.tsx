@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
+import { VentureSignature } from "@/components/VentureSignature";
 import "./globals.css";
 import SiteHeader from "@/components/site/SiteHeader";
 import SiteFooter from "@/components/site/SiteFooter";
 import TrustBanner from "@/components/site/TrustBanner";
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2" },
+      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png?v=2" }],
+  },
+
+  manifest: "/site.webmanifest?v=2",
+
   metadataBase: new URL("https://legacybridge.ai"),
   title: "LegacyBridge | AI for the software nobody can casually replace",
   description:
@@ -52,6 +63,8 @@ export default function RootLayout({
           {children}
           <SiteFooter />
         </div>
+      
+        <VentureSignature tone="dark" variant="default" />
       </body>
     </html>
   );

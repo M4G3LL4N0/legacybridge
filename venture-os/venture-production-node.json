@@ -1,0 +1,49 @@
+{
+  "project_update_os_version": "v4.0 \"Autonomous Venture Studio Production OS\"",
+  "last_updated": "2026-05-24T06:19:39.561Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "current_status": "PARKED"
+  },
+  "production": {
+    "production_decision": "PARK",
+    "production_status": "PARKED",
+    "best_next_action": "Do not touch — parked",
+    "recommended_worker": "none",
+    "recommended_action_type": "PARKING_ACTION",
+    "founder_attention_level": "P3",
+    "approval_required": false,
+    "manual_check_required": true,
+    "verification_required": true,
+    "do_not_touch": true,
+    "ignore_for_now": true
+  },
+  "gates": {
+    "recovery_gate": "FAIL",
+    "verification_gate": "FAIL",
+    "qa_gate": "NOT_NEEDED",
+    "signal_gate": "PARTIAL",
+    "public_portfolio_gate": "NOT_NEEDED",
+    "investor_room_gate": "PARTIAL",
+    "platform_gate": "NOT_NEEDED",
+    "approval_gate": "PASS"
+  },
+  "scores": {
+    "production_score": 30,
+    "action_priority_score": 33,
+    "risk_score": 75,
+    "upside_score": 18,
+    "effort_score": 90,
+    "confidence_score": 20
+  },
+  "handoff": {
+    "autobuilder_prompt": "",
+    "cursor_prompt": "In /Users/matador/startups/legacybridge/: Do not touch — parked. Read venture-production-node.md. Do not deploy/push/publish. pnpm if needed. Update venture-update-log.md.",
+    "aider_prompt": "",
+    "manual_check": "",
+    "founder_decision": ""
+  }
+}

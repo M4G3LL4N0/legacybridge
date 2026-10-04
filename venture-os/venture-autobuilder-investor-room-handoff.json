@@ -1,0 +1,21 @@
+{
+  "project_update_os_version": "v3.9 \"Autonomous Investor Room & Private Diligence Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "visibility_level": "INVESTOR_ROOM_PARKED",
+  "sections": [
+    "Appendix"
+  ],
+  "proof_level": "PROOF_PROTOTYPE",
+  "demo_use": "exclude",
+  "diligence_readiness_score": 27,
+  "proof_confidence_score": 5,
+  "risk_transparency_score": 60,
+  "claim_safety_score": 85,
+  "approval_required": false,
+  "verification_required": true,
+  "recommended_packet_type": "INVESTOR_ROOM_BRIEF",
+  "recommended_action": "Prepare brief for later inclusion",
+  "worker_prompt": "Prepare brief for later inclusion"
+}

@@ -1,0 +1,28 @@
+{
+  "project_update_os_version": "v4.0 \"Autonomous Venture Studio Production OS\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "production_decision": "PARK",
+  "production_status": "PARKED",
+  "recommended_action_type": "PARKING_ACTION",
+  "recommended_worker": "none",
+  "best_next_action": "Do not touch — parked",
+  "priority_score": 33,
+  "approval_required": false,
+  "manual_check_required": false,
+  "verification_required": true,
+  "files_to_read": [
+    "venture-production-node.md"
+  ],
+  "files_safe_to_edit": [
+    "venture-os/**"
+  ],
+  "files_to_avoid": [
+    ".env",
+    "../noaerth/**"
+  ],
+  "success_condition": "Action verified in venture-update-log",
+  "stop_condition": "Venture is parked/quarantined — stop",
+  "worker_prompt": "Do not touch — parked"
+}

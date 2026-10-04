@@ -5,6 +5,9 @@ import ProductStatCard from "@/components/product/ProductStatCard";
 import Panel from "@/components/product/Panel";
 import RouteCtaStrip from "@/components/product/RouteCtaStrip";
 import StatusBanner from "@/components/product/StatusBanner";
+import { FounderControlStrip } from "@/components/FounderControlStrip";
+import { ExpansionOSPanel } from "@/components/ExpansionOSPanel";
+import { TrillionXV3ReadinessStrip } from "@/components/TrillionXV3ReadinessStrip";
 import {
   activity,
   artifacts,
@@ -39,6 +42,8 @@ function stageClasses(stage: string) {
 export default function ProductAppPage() {
   return (
     <>
+    <FounderControlStrip />
+      <TrillionXV3ReadinessStrip buildStatus="PASS" />
     <SubpageVisual variant="default" />
       <ProductShell>
       <div className="space-y-6">
@@ -350,5 +355,5 @@ export default function ProductAppPage() {
       </div>
     </ProductShell>
   </>
-  )
+  );
 }

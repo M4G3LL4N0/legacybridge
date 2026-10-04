@@ -1,0 +1,22 @@
+{
+  "project_update_os_version": "v4.4 \"Autonomous Customer Validation & Revenue Experiment Control Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "customer_validation_readiness": "VALIDATION_PARKED",
+  "revenue_experiment_readiness": "REVENUE_NOT_READY",
+  "validation_decision": "PARK_VALIDATION",
+  "experiment_type": "CUSTOMER_DISCOVERY_EXPERIMENT",
+  "target_customer": "Undefined — needs discovery",
+  "buyer_persona": "Unknown buyer",
+  "customer_signal_score": 58,
+  "revenue_signal_score": 13,
+  "buyer_intent_score": 9,
+  "approval_required": true,
+  "manual_action_required": true,
+  "do_not_send_automatically": true,
+  "do_not_charge_money": true,
+  "best_validation_action": "No validation — venture parked",
+  "best_revenue_action": "No revenue experiment — validate customer first",
+  "worker_prompt": "Validation planning only: No validation — venture parked. No outreach. No payment."
+}

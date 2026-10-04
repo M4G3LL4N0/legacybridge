@@ -1,0 +1,63 @@
+{
+  "project_update_os_version": "v5.4 \"Autonomous Live Site QA & Screenshot Intelligence Engine\"",
+  "last_updated": "2026-05-24T22:58:23.845Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "expected_live_url": "https://legacybridge.noaerth.com",
+    "public_url_pattern": "https://{folder}.noaerth.com"
+  },
+  "live_site_qa": {
+    "live_site_status": "LIVE_DO_NOT_SHOW_PUBLICLY",
+    "live_qa_action_type": "MARK_DO_NOT_SHOW_PUBLICLY",
+    "live_site_qa_score": 48,
+    "should_have_public_site": "no",
+    "manual_browser_check_required": true,
+    "screenshot_required": true,
+    "recommended_worker": "none",
+    "approval_required": false,
+    "verification_required": true,
+    "safe_to_show_publicly": false,
+    "safe_for_investor_demo": false
+  },
+  "scores": {
+    "live_url_confidence": 80,
+    "homepage_confidence": 60,
+    "mobile_confidence": 69,
+    "cta_confidence": 90,
+    "screenshot_confidence": 72,
+    "visual_trust_confidence": 72,
+    "claim_safety_confidence": 60,
+    "release_confidence": 70,
+    "portfolio_confidence": 70,
+    "investor_demo_confidence": 6,
+    "risk_404_score": 75,
+    "public_trust_risk_score": 55
+  },
+  "next": {
+    "best_live_site_action": "Do not show publicly until recovery",
+    "files_to_read": [
+      "venture-live-site-qa-node.json",
+      "venture-scorecard.json"
+    ],
+    "files_safe_to_edit": [
+      "app/",
+      "components/",
+      "venture-os/"
+    ],
+    "files_to_avoid": [
+      ".env",
+      "node_modules/"
+    ],
+    "manual_checks_needed": [
+      "desktop",
+      "mobile",
+      "cta",
+      "claims",
+      "screenshot"
+    ],
+    "success_condition": "Manual check documented; live issues identified",
+    "stop_condition": "No deploy without approval",
+    "worker_prompt": "No worker"
+  }
+}

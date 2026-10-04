@@ -1,0 +1,8 @@
+{
+  "project_update_os_version": "v5.4 \"Autonomous Live Site QA & Screenshot Intelligence Engine\"",
+  "folder": "legacybridge",
+  "expected_live_url": "https://legacybridge.noaerth.com",
+  "mission": "Do not show publicly until recovery",
+  "worker": "none",
+  "prompt": "No worker"
+}

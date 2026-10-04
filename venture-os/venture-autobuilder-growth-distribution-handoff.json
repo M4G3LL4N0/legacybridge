@@ -1,0 +1,23 @@
+{
+  "project_update_os_version": "v4.5 \"Autonomous Growth Distribution & Channel Experiment Control Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "growth_readiness": "GROWTH_PARKED",
+  "growth_decision": "PARK_GROWTH",
+  "best_channel": "MANUAL_AUDIENCE_DISCOVERY",
+  "second_channel": "CONTENT",
+  "target_audience": "Early adopters interested in Legacybridge",
+  "growth_message_hypothesis": "Legacybridge: solve one clear pain — sharpen before growth",
+  "growth_cta": "Give feedback",
+  "growth_signal_score": 41,
+  "channel_fit_score": 40,
+  "manual_posting_approval_required": true,
+  "manual_outreach_approval_required": true,
+  "do_not_post_automatically": true,
+  "do_not_send_automatically": true,
+  "do_not_scrape": true,
+  "do_not_use_paid_ads": true,
+  "best_growth_action": "No growth — venture parked",
+  "worker_prompt": "Growth planning only: No growth — venture parked. No post/send/scrape/ads."
+}

@@ -1,0 +1,75 @@
+{
+  "project_update_os_version": "v4.1 \"Autonomous Execution Scheduler & Worker Orchestration Engine\"",
+  "last_updated": "2026-05-24T19:43:41.552Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_decision": "PARK",
+    "production_status": "PARKED"
+  },
+  "scheduler": {
+    "scheduler_status": "SCHEDULER_PARKED",
+    "worker_type": "PARKING_WORKER",
+    "run_mode": "DO_NOT_RUN",
+    "priority": "P5_DO_NOT_RUN",
+    "best_scheduled_action": "Do not touch — parked",
+    "retry_policy": "NO_RETRY",
+    "cooldown": "COOLDOWN_7_DAYS",
+    "work_limit": "none",
+    "approval_required": false,
+    "verification_required": true,
+    "manual_check_required": false,
+    "blocked": false,
+    "do_not_run": true
+  },
+  "dependencies": [
+    {
+      "dependency_type": "VERIFICATION_DEPENDENCY",
+      "description": "Prior work unverified",
+      "blocking": true,
+      "resolution_action": "Log verification in venture-update-log"
+    },
+    {
+      "dependency_type": "RECOVERY_DEPENDENCY",
+      "description": "Recovery/build must pass",
+      "blocking": true,
+      "resolution_action": "Do not touch — parked"
+    }
+  ],
+  "execution": {
+    "files_to_read": [
+      "venture-production-node.json",
+      "venture-execution-scheduler-node.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/**",
+      "app/**",
+      "src/**"
+    ],
+    "files_to_avoid": [
+      ".env",
+      "../noaerth/**"
+    ],
+    "commands_allowed": [
+      "pnpm build",
+      "pnpm lint"
+    ],
+    "commands_forbidden": [
+      "git push",
+      "deploy",
+      "vercel deploy",
+      "cron"
+    ],
+    "success_condition": "Action logged and verified in venture-update-log",
+    "stop_condition": "One action complete or approval/manual block hit",
+    "next_run_trigger": "Verification pass"
+  },
+  "handoff": {
+    "autobuilder_prompt": "",
+    "cursor_prompt": "",
+    "aider_prompt": "",
+    "manual_prompt": "",
+    "founder_prompt": ""
+  }
+}

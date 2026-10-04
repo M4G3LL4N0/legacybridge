@@ -1,0 +1,109 @@
+{
+  "project_update_os_version": "v3.1 \"Live Portfolio Telemetry Engine\"",
+  "last_updated": "2026-05-24T05:20:00.037Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "QUARANTINE",
+    "best_next_action": "Fix build per venture-build-telemetry.md"
+  },
+  "scores": {
+    "overall_score": 38
+  },
+  "telemetry": {
+    "heartbeat_status": "BROKEN",
+    "live_site_status": "WARNING",
+    "local_status": "HEALTHY",
+    "build_status": "BROKEN",
+    "route_status": "HEALTHY",
+    "deployment_status": "WARNING",
+    "score_drift_status": "HEALTHY",
+    "stage_drift_status": "HEALTHY",
+    "file_change_status": "WARNING",
+    "stale_context_status": "HEALTHY",
+    "regression_status": "REGRESSED",
+    "improvement_status": "HEALTHY"
+  },
+  "live_probe": {
+    "http_status": 200,
+    "ok": true,
+    "note": "HTTP OK"
+  },
+  "alerts": {
+    "needs_attention_today": true,
+    "public_risk": false,
+    "build_risk": true,
+    "verification_risk": true,
+    "stage_overstatement_risk": false,
+    "claim_risk": false,
+    "stale_context_risk": false,
+    "alert_severity": "P1"
+  },
+  "changes": {
+    "files_changed": [
+      ".autobuilder/deps_fingerprint.txt",
+      ".gitignore",
+      "CLAIM_REGISTER.md",
+      "DECISION_RECORD.md",
+      "FAILURE_REGISTER.md",
+      "LAUNCH_READINESS.md",
+      "LOCAL_REVIEW.md",
+      "PREMIUM_UI_UX_REPORT.md",
+      "PROOF_LOOP.md",
+      "RECOVERY_NOTES.md",
+      "pnpm-lock.yaml",
+      "src/app/api/checkout/route.ts",
+      "src/app/app/notifications/page.tsx",
+      "src/components/ConversionCTAVisual.tsx",
+      "src/components/FeatureVisualGrid.tsx",
+      "src/components/HeroProductPanel.tsx",
+      "src/components/MarketingGraphicsStack.tsx",
+      "src/components/ProblemContrastSection.tsx",
+      "src/components/ProcessFlowSection.tsx",
+      "src/components/SolutionPipelineGraphic.tsx",
+      "src/components/SubpageVisual.tsx",
+      "src/components/TrustLayerGraphic.tsx",
+      "src/components/TrustStrip.tsx",
+      "src/components/site/TrustBanner.tsx",
+      "startupjourney.md",
+      "NOAERTH_UPGRADE_REPORT.md",
+      "src/app/demo/page.tsx",
+      "src/components/LegacyBridgeQuerySim.tsx",
+      "next.config.js",
+      "next.config.ts",
+      "package-lock.json",
+      "package.json",
+      "src/app/about/page.tsx",
+      "src/app/app/artifacts/page.tsx",
+      "src/app/app/command-center/page.tsx",
+      "src/app/app/connectors/page.tsx",
+      "src/app/app/ingest/page.tsx",
+      "src/app/app/onboarding/page.tsx",
+      "src/app/app/page.tsx",
+      "src/app/app/reports/executive-summary/page.tsx"
+    ],
+    "high_risk_changes": [
+      "next.config.js",
+      "next.config.ts",
+      "package-lock.json",
+      "package.json"
+    ],
+    "stale_files": [],
+    "regressions": [
+      {
+        "type": "build",
+        "what": "Build FAIL"
+      }
+    ],
+    "improvements": []
+  },
+  "next": {
+    "telemetry_next_action": "Fix build per venture-build-telemetry.md",
+    "recommended_kernel_action": "FIX_BUILD",
+    "recommended_worker": "manual",
+    "approval_required": false,
+    "verification_required": true
+  }
+}

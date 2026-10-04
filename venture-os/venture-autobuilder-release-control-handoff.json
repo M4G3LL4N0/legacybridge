@@ -1,0 +1,23 @@
+{
+  "project_update_os_version": "v4.3 \"Autonomous Deployment Readiness & Release Control Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "live_url": "https://legacybridge.noaerth.com",
+  "release_readiness_status": "RELEASE_DO_NOT_DEPLOY",
+  "release_decision": "NO_RELEASE_NEEDED",
+  "release_risk": "RELEASE_RISK_LOW",
+  "manual_deploy_approval_required": true,
+  "manual_git_push_approval_required": true,
+  "post_deploy_qa_required": false,
+  "can_prepare_release": false,
+  "can_deploy_manually_after_approval": false,
+  "can_git_push_manually_after_approval": false,
+  "release_blocked": false,
+  "release_local_only": true,
+  "do_not_deploy": true,
+  "release_blockers": [],
+  "best_release_action": "No release — venture parked",
+  "approval_required": true,
+  "verification_required": true,
+  "worker_prompt": "Release prep only: No release — venture parked. No deploy. No push. No vercel."
+}

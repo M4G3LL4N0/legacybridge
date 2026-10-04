@@ -1,0 +1,72 @@
+{
+  "project_update_os_version": "v5.6 \"Autonomous Domain, Vercel & Deployment Mapping Intelligence Engine\"",
+  "last_updated": "2026-05-24T23:15:34.919Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "expected_live_url": "https://legacybridge.noaerth.com",
+    "expected_vercel_project": "legacybridge",
+    "expected_github_repo": "startups/legacybridge"
+  },
+  "deployment_mapping": {
+    "deployment_mapping_status": "DEPLOYMENT_DO_NOT_DEPLOY",
+    "deployment_action_type": "MARK_DO_NOT_DEPLOY",
+    "deployment_mapping_score": 71,
+    "framework": "Next.js",
+    "package_manager": "pnpm",
+    "install_command": "pnpm install",
+    "build_command": "pnpm build",
+    "expected_output": "Vercel framework default (Next.js)",
+    "manual_deploy_required": true,
+    "manual_git_push_required": true,
+    "pre_deploy_verification_required": true,
+    "post_deploy_qa_required": true,
+    "recommended_worker": "none",
+    "approval_required": true,
+    "verification_required": true,
+    "safe_to_deploy_manually_after_verification": false
+  },
+  "scores": {
+    "folder_mapping_confidence": 90,
+    "live_url_confidence": 85,
+    "vercel_mapping_confidence": 55,
+    "github_mapping_confidence": 50,
+    "framework_confidence": 90,
+    "package_manager_confidence": 90,
+    "install_command_confidence": 85,
+    "build_command_confidence": 85,
+    "output_config_confidence": 75,
+    "env_safety_confidence": 80,
+    "release_alignment_confidence": 70,
+    "post_deploy_qa_confidence": 75,
+    "deployment_risk_score": 40
+  },
+  "next": {
+    "best_deployment_mapping_action": "Complete deployment mapping packet and manual Vercel/Git checks",
+    "files_to_read": [
+      "package.json",
+      "venture-deployment-mapping-node.json",
+      "venture-release-control-node.json"
+    ],
+    "files_safe_to_edit": [
+      "package.json",
+      ".env.example",
+      "vercel.json",
+      "venture-os/"
+    ],
+    "files_to_avoid": [
+      ".env",
+      ".env.local",
+      ".env.production"
+    ],
+    "manual_checks_needed": [
+      "vercel dashboard",
+      "git remote -v",
+      "domain browser check",
+      "pnpm build"
+    ],
+    "success_condition": "Mapping packet complete; build passes when approved",
+    "stop_condition": "No automatic deploy or push",
+    "worker_prompt": "No worker"
+  }
+}

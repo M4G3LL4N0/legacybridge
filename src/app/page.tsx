@@ -311,7 +311,6 @@ export default function HomePage() {
         <PremiumHeroVisual />
       </div>
         {/* replaced by DomainCommandGraphic */}
-</div>
     </div>
   );
 }

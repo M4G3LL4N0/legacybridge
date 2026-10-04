@@ -1,0 +1,60 @@
+{
+  "project_update_os_version": "v5.5 \"Autonomous Portfolio Screenshot, Artwork & Venture Card Upgrade Engine\"",
+  "last_updated": "2026-05-24T23:07:15.466Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "expected_live_url": "https://legacybridge.noaerth.com",
+    "public_portfolio_url": "https://legacybridge.noaerth.com",
+    "current_public_status": "paused"
+  },
+  "presentation": {
+    "portfolio_presentation_status": "PRESENTATION_DO_NOT_SHOW_PUBLICLY",
+    "presentation_action_type": "MARK_DO_NOT_SHOW",
+    "portfolio_presentation_score": 47,
+    "should_show_publicly": "no",
+    "should_use_live_screenshot": "unknown",
+    "should_use_custom_artwork": "unknown",
+    "best_presentation_action": "Review venture card presentation packet",
+    "recommended_worker": "none",
+    "approval_required": false,
+    "verification_required": true,
+    "safe_to_show_publicly": false
+  },
+  "scores": {
+    "card_clarity_score": 60,
+    "card_accuracy_score": 70,
+    "copy_quality_score": 60,
+    "cta_quality_score": 90,
+    "visual_quality_score": 72,
+    "screenshot_readiness_score": 72,
+    "artwork_readiness_score": 25,
+    "visual_identity_score": 15,
+    "mobile_card_readiness_score": 69,
+    "status_accuracy_score": 70,
+    "public_trust_score": 61,
+    "investor_presentation_score": 6,
+    "risk_score": 100
+  },
+  "next": {
+    "files_to_read": [
+      "venture-portfolio-presentation-node.json",
+      "venture-live-site-qa-node.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/",
+      "public/"
+    ],
+    "files_to_avoid": [
+      ".env"
+    ],
+    "manual_checks_needed": [
+      "screenshot",
+      "card copy",
+      "mobile layout"
+    ],
+    "success_condition": "Card packet complete; manual screenshot if needed",
+    "stop_condition": "No public publish without founder approval",
+    "worker_prompt": "No worker"
+  }
+}

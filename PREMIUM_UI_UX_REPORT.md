@@ -2,7 +2,7 @@
 
 ## 1. Current Snapshot
 - **Product:** legacybridge
-- **Local folder:** `/Users/joshuadavis/startups/legacybridge`
+- **Local folder:** `/Users/matador/startups/legacybridge`
 - **Live URL:** https://legacybridge.noaerth.com
 - **Framework:** Next.js
 - **Package manager:** pnpm (portfolio default)
@@ -66,7 +66,7 @@
 
 ## 8. Local Review
 ```bash
-cd /Users/joshuadavis/startups/legacybridge
+cd /Users/matador/startups/legacybridge
 pnpm install   # if needed
 pnpm build
 pnpm dev

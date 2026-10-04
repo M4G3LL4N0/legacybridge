@@ -1,0 +1,212 @@
+{
+  "project_update_os_version": "v3.4 \"Portfolio Knowledge Graph & Cross-Venture Synergy Engine\"",
+  "last_updated": "2026-05-24T05:41:34.415Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "Fix build error in src/app/page.tsx — approval before pnpm install"
+  },
+  "entities": {
+    "customer_segments": [
+      "Operations leaders and technical founders"
+    ],
+    "buyer_types": [
+      "Founder/operator budget"
+    ],
+    "user_types": [
+      "Day-to-day operator who feels Teams cannot verify identity, claims, or risk fast enough fo"
+    ],
+    "problems": [
+      "Teams cannot verify identity, claims, or risk fast enough for high-stakes decisions."
+    ],
+    "use_cases": [
+      "Start an automation run and review the output log"
+    ],
+    "markets": [
+      "AI agents"
+    ],
+    "categories": [
+      "AI agents"
+    ],
+    "product_types": [
+      "workflow"
+    ],
+    "core_user_actions": [
+      "Start an automation run and review the output log"
+    ],
+    "business_models": [
+      "Subscription SaaS"
+    ],
+    "monetization_paths": [
+      "Fix product surface, then sell a 2-week paid pilot to 1 design partner"
+    ],
+    "growth_channels": [
+      "Content"
+    ],
+    "tech_stack": [
+      "next.js (16.2.3)",
+      "pnpm"
+    ],
+    "components": [
+      "ExpansionOSPanel",
+      "ExpertCouncilUpgrade",
+      "FounderControlStrip",
+      "KissHero",
+      "SubpageVisual",
+      "TrillionXV3ReadinessStrip",
+      "VentureSignature",
+      "ConversionCTAVisual",
+      "ExpansionOSPanel",
+      "ExpertCouncilUpgrade",
+      "FeatureVisualGrid",
+      "FounderControlStrip",
+      "HeroProductPanel",
+      "KissHero",
+      "LegacyBridgeQuerySim",
+      "MarketingGraphicsStack",
+      "OmniWorkflowSection",
+      "ProblemContrastSection",
+      "ProcessFlowSection",
+      "SolutionPipelineGraphic"
+    ],
+    "routes": [],
+    "forms": [],
+    "ctas": [],
+    "product_flows": [
+      "Start an automation run and review the output log"
+    ],
+    "bug_patterns": [
+      "build"
+    ],
+    "recovery_patterns": [
+      "RECOVERY_BLOCKED"
+    ],
+    "investor_narratives": [
+      "product proof"
+    ],
+    "risks": [
+      "build_fail"
+    ]
+  },
+  "relationships": [
+    {
+      "target_venture": "1bc",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with 1bc; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "access-layer",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with access-layer; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "behindcurtain",
+      "relationship_type": "OVERLAPS_WITH",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Merger review — same problem/customer cluster",
+      "recommended_action": "Merger review — same problem/customer cluster"
+    },
+    {
+      "target_venture": "bioyield-labs",
+      "relationship_type": "OVERLAPS_WITH",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Merger review — same problem/customer cluster",
+      "recommended_action": "Merger review — same problem/customer cluster"
+    },
+    {
+      "target_venture": "cleanstack-os",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with cleanstack-os; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "cortexhq",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with cortexhq; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "devstate",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with devstate; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "emailsimple",
+      "relationship_type": "OVERLAPS_WITH",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Merger review — same problem/customer cluster",
+      "recommended_action": "Merger review — same problem/customer cluster"
+    },
+    {
+      "target_venture": "execmemory-ai",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Review duplicate overlap with execmemory-ai; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "foreverluvd",
+      "relationship_type": "OVERLAPS_WITH",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Merger review — same problem/customer cluster",
+      "recommended_action": "Merger review — same problem/customer cluster"
+    },
+    {
+      "target_venture": "freeconomie",
+      "relationship_type": "DUPLICATES",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "PARK_DUPLICATE",
+      "why": "Review duplicate overlap with freeconomie; consider park weaker venture",
+      "recommended_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+    },
+    {
+      "target_venture": "fullofshit",
+      "relationship_type": "OVERLAPS_WITH",
+      "synergy_type": "DUPLICATION_RISK",
+      "confidence": 100,
+      "decision": "MERGE_REVIEW",
+      "why": "Merger review — same problem/customer cluster",
+      "recommended_action": "Merger review — same problem/customer cluster"
+    }
+  ],
+  "synergy": {
+    "synergy_score": 51,
+    "reuse_score": 100,
+    "duplication_risk_score": 100,
+    "cross_sell_score": 100,
+    "bundle_score": 100,
+    "merge_score": 100,
+    "best_synergy_action": "Review duplicate overlap with legacybridge; consider park weaker venture"
+  }
+}

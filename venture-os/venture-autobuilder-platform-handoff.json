@@ -1,0 +1,25 @@
+{
+  "project_update_os_version": "v3.5 \"Autonomous Shared Infrastructure & Platform Layer Engine\"",
+  "folder": "legacybridge",
+  "venture_name": "Legacybridge",
+  "platform_role": "consumer",
+  "platformization_score": 32,
+  "best_platform_decision": "PLATFORMIZE_LATER",
+  "best_platformization_type": "PATTERN_LIBRARY",
+  "best_platform_action": "Fix build before platform reuse — see recovery packet",
+  "worker_allowed": false,
+  "recommended_worker": "manual",
+  "approval_required": false,
+  "verification_required": true,
+  "files_to_read": [
+    "venture-platform-node.json"
+  ],
+  "files_safe_to_edit": [
+    "venture-os/*.md"
+  ],
+  "files_to_avoid": [
+    "../**",
+    ".env*"
+  ],
+  "worker_prompt": "Fix build before platform reuse — see recovery packet. No shared package. No cross-venture file moves."
+}

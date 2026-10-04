@@ -1,0 +1,43 @@
+{
+  "project_update_os_version": "v4.6 \"Autonomous Portfolio Pruning & Resource Allocation Engine\"",
+  "last_updated": "2026-05-24T20:37:57.061Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_status": "PARKED",
+    "release_status": "RELEASE_DO_NOT_DEPLOY",
+    "validation_status": "VALIDATION_PARKED",
+    "growth_status": "GROWTH_PARKED"
+  },
+  "allocation": {
+    "allocation_status": "ALLOCATE_PARK",
+    "resource_level": "RESOURCE_P4_PARKED",
+    "pruning_decision": "PARK",
+    "allocation_action_type": "PARKING_CYCLE",
+    "allocation_score": 26,
+    "proof_score": 59,
+    "signal_score": 37,
+    "upside_score": 40,
+    "execution_confidence_score": 40,
+    "risk_score": 35,
+    "effort_score": 10,
+    "focus_fit_score": 25,
+    "differentiation_score": 40,
+    "founder_attention_cost": 30,
+    "overwork_risk_score": 81,
+    "approval_required": true,
+    "best_allocation_action": "Park — preserve venture-os; no build cycles"
+  },
+  "routing": {
+    "autobuilder_allowed": false,
+    "cursor_allowed": false,
+    "aider_allowed": false,
+    "founder_required": false,
+    "manual_required": false,
+    "cooldown_required": false,
+    "parking_recommended": true,
+    "merge_review_recommended": false,
+    "bundle_review_recommended": false
+  }
+}

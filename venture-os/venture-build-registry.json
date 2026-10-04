@@ -1,0 +1,35 @@
+{
+  "build_pulse_version": "v1.2",
+  "last_reviewed": "2026-05-22",
+  "folder": "legacybridge",
+  "framework": "Next.js (16.2.3)",
+  "framework_confidence": 95,
+  "router_type": "app-router",
+  "package_manager": "pnpm",
+  "lockfiles": [
+    "pnpm-lock.yaml"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "recommended_commands": {
+    "install": "pnpm install",
+    "dev": "pnpm dev",
+    "build": "pnpm build",
+    "lint": "pnpm lint",
+    "test": null,
+    "typecheck": "pnpm typecheck"
+  },
+  "external_services": [],
+  "risk_codes": [
+    "DUAL_APP_ROOT",
+    "RISKY_NODE_MODULES"
+  ],
+  "safe_edit_level": 2,
+  "build_status": "broken",
+  "recovery_priority": "P1"
+}

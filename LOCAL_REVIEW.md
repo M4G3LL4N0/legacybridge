@@ -6,7 +6,7 @@
 ## Quick start
 
 ```bash
-cd /Users/joshuadavis/startups/legacybridge
+cd /Users/matador/startups/legacybridge
 pnpm install   # if needed
 pnpm dev
 ```

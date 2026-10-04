@@ -1,0 +1,29 @@
+{
+  "project_update_os_version": "v3.6 \"Autonomous Data Model & Signal Capture Engine\"",
+  "last_updated": "2026-05-24T05:57:51.963Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE"
+  },
+  "data_model_maturity": "DATA_DOCS_ONLY",
+  "storage_mode": "MARKDOWN_LOG",
+  "demand_signal_score": 17,
+  "evidence_confidence_score": 0,
+  "scores": {
+    "customer": 12,
+    "revenue": 6,
+    "growth": 20,
+    "product_usage": 41,
+    "feedback": 7,
+    "qa": 25,
+    "telemetry": 25,
+    "investor_proof": 6
+  },
+  "best_signal_type": "BUILD_SIGNAL",
+  "best_signal_action": "Capture BUILD_SIGNAL in venture-telemetry.json — fix build before demand tests",
+  "privacy_risk": "medium",
+  "data_sensitivity": "medium",
+  "approval_required": true
+}

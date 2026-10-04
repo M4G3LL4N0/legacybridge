@@ -1,0 +1,27 @@
+{
+  "venture": "legacybridge",
+  "version": "v1.3",
+  "last_reviewed": "2026-05-22",
+  "folder": "legacybridge",
+  "slug": "legacybridge",
+  "inferred_url": "https://legacybridge.noaerth.com",
+  "normalized_url": "https://legacybridge.noaerth.com",
+  "url_confidence": 98,
+  "http_status": "200",
+  "live_status": "loads",
+  "local_vs_live_status": "LIVE_AHEAD_OF_LOCAL",
+  "scores": {
+    "homepage_clarity_score": 60,
+    "mobile_score": 69,
+    "public_design_score": 72,
+    "cta_score": 90,
+    "public_positioning_score": 60,
+    "investor_readiness_score": 78,
+    "customer_readiness_score": 63,
+    "public_site_score": 72
+  },
+  "public_fix_priority": "P1",
+  "next_public_action": "Redeploy stub routes + sharpen homepage CTA for legacybridge",
+  "nav_404_count": 6,
+  "unsupported_claims": []
+}

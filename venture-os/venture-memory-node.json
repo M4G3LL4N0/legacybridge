@@ -1,0 +1,43 @@
+{
+  "project_update_os_version": "v4.7 \"Autonomous Portfolio Memory & Learning Loop Engine\"",
+  "last_updated": "2026-05-24T20:44:59.378Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "production_status": "PARKED",
+    "allocation_status": "ALLOCATE_PARK"
+  },
+  "memory": {
+    "memory_status": "MEMORY_CONFLICTED",
+    "learning_decision": "EXTRACT_FAILURE_PATTERN",
+    "primary_learning_type": "RECOVERY_LEARNING",
+    "lesson_strength": "LESSON_STRONG",
+    "strongest_lesson": "Scorecard build PASS conflicts with production RECOVER/BLOCKED — verify before trusting build status",
+    "biggest_repeated_mistake": "Treating build PASS as release-ready without live-site and evidence chain verification",
+    "best_reusable_pattern": "Always reconcile scorecard.build_status with production_status and live-site evidence before allocation",
+    "best_guardrail_to_add": "Do not allocate build cycles when evidence_status is CONFLICTED",
+    "best_checklist_to_add": "Evidence reconciliation: scorecard vs build log vs live HTTP vs QA artifact",
+    "prompt_worth_reusing": true,
+    "future_run_rule_needed": true,
+    "learning_priority_score": 75,
+    "memory_confidence_score": 100
+  },
+  "next": {
+    "best_learning_action": "Extract recovery learning: Scorecard build PASS conflicts with production RECOVER/BLOCKED — verify before t",
+    "recommended_worker": "AutoBuilder",
+    "files_to_read": [
+      "venture-update-log.md",
+      "venture-allocation-node.json",
+      "venture-verification-evidence-node.json"
+    ],
+    "files_safe_to_edit": [
+      "venture-os/**"
+    ],
+    "files_to_avoid": [
+      ".env"
+    ],
+    "success_condition": "Lesson captured with evidence link",
+    "stop_condition": "Evidence conflict unresolved"
+  }
+}

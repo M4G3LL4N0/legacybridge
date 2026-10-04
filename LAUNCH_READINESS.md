@@ -1,40 +1,15 @@
-# Launch Readiness: Legacybridge
+# Launch Readiness — Legacybridge
 
-## Launch Status
-- Current label: **LOCAL REVIEW READY**
-- Reason: Portfolio build PASS; claim register installed.
-- What is ready: Local `pnpm build`; repo routes
-- What is not ready: PUBLIC sharing; unverified live URLs; traction claims
-- What is demo only: /demo — LegacyBridgeQuerySim
-- What is planned: Production auth, billing, live integrations (unless in repo)
-- What is blocked: None documented
-- What is stale: ASSUMPTION live URL
-- What is risky: Compliance, security, medical, or financial claims without proof — see CLAIM_REGISTER.md
+**Date:** 2026-05-20 · **Build:** FAIL
 
-## Local Review
-- Local command: `cd /Users/joshuadavis/startups/legacybridge && pnpm install && pnpm dev`
-- Routes to inspect: `/`, `/demo`
-- Expected behavior: /demo — LegacyBridgeQuerySim
-- Known limitations: DEMO query simulation only
-- Manual checks:
-  - [ ] Build: `pnpm build`
-  - [ ] Demo labels visible on metrics
-  - [ ] No fake traction in hero copy
-  - [ ] Export/copy actions work if present
+| Gate | Status |
+|------|--------|
+| Build PASS | no |
+| Demo labeled | yes |
+| Trust page | see TRILLIONX_V4_STATUS |
+| Support/docs | see route map |
+| Founder approval copy | Expansion OS / gates |
+| Production deploy | **BLOCKED** until approval |
 
-## Claim Safety
-- Claims safe to publish: Product description as hypothesis; DEMO-labeled interactions
-- Claims that need proof: Live URL uptime, customer counts, revenue, compliance
-- Claims to remove or weaken: Any VERIFIED label without build or curl proof
-
-## Launch Gate
-- Build status: **PASS**
-- Main route status: expected OK locally
-- CTA status: verify manually in dev
-- MVP interaction status: DEMO route documented
-- Mobile status: verify manually
-- Trust/factuality status: use CLAIM_REGISTER.md
-- Secrets/build artifacts status: do not commit .env
-- Human approval needed: before any `vercel --prod` or public claim upgrades
-- Final label: **LOCAL REVIEW READY** (PUBLIC READY: **no**; DEMO READY: yes (label all demo outputs))
-
+## Rollback
+Preview-only; no prod deploy in this pass.

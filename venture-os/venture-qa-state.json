@@ -1,0 +1,54 @@
+{
+  "project_update_os_version": "v3.3 \"Autonomous QA Browser & Product Flow Engine\"",
+  "last_updated": "2026-05-24T05:31:35.539Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com",
+    "current_stage": "STAGE_3_BUILDABLE",
+    "kernel_decision": "QUARANTINE"
+  },
+  "qa": {
+    "qa_status": "QA_NOT_READY",
+    "qa_scope": "QA_SCOPE_INTERNAL",
+    "qa_score": 25,
+    "manual_browser_test_required": true,
+    "screenshot_review_required": true,
+    "visual_regression_check_required": true,
+    "approval_required": false,
+    "verification_required": true
+  },
+  "checks": {
+    "homepage_first_impression": "blocked",
+    "mobile_qa": "blocked",
+    "desktop_qa": "blocked",
+    "cta_click_path": "blocked",
+    "route_walkthrough": "Pass",
+    "product_flow": "blocked",
+    "form_qa": "blocked",
+    "waitlist_qa": "blocked",
+    "quote_request_qa": "blocked",
+    "demo_qa": "pending",
+    "dashboard_qa": "blocked",
+    "accessibility_qa": "pending",
+    "performance_perception": "pending",
+    "trust_claims": "Pass",
+    "conversion_path": "pending"
+  },
+  "failures": {
+    "critical_failures": [
+      "Build FAIL — cannot trust local or live parity",
+      "Venture quarantined"
+    ],
+    "major_failures": [],
+    "minor_failures": [],
+    "recovery_required": false
+  },
+  "next": {
+    "best_qa_action": "Fix build before browser QA — see venture-recovery-packet.md",
+    "recommended_worker": "Aider",
+    "qa_packet_type": "BROWSER_QA_PACKET",
+    "success_condition": "Manual browser QA pass + screenshots captured",
+    "failure_condition": "Any P0 check fails or claims unsafe"
+  }
+}

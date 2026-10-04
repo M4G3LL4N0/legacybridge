@@ -15,7 +15,7 @@ const nav = [
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/8 bg-[#050916]/70 backdrop-blur-2xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-12">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3 sm:py-4 sm:px-10 lg:px-12">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border border-white/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.10),rgba(255,255,255,0.05))] text-sm font-semibold tracking-[0.2em] text-white shadow-[0_0_45px_rgba(56,189,248,0.12)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(56,189,248,0.16),transparent_38%),radial-gradient(circle_at_70%_80%,rgba(16,185,129,0.12),transparent_35%)]" />
@@ -25,7 +25,7 @@ export default function SiteHeader() {
             <div className="text-sm font-semibold uppercase tracking-[0.28em] text-white/76">
               LegacyBridge
             </div>
-            <div className="text-xs text-white/42">AI for legacy code intelligence</div>
+            <div className="text-sm text-white/42">AI for legacy code intelligence</div>
           </div>
         </Link>
 

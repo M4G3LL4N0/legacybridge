@@ -1,0 +1,30 @@
+{
+  "project_update_os_version": "v5.1 \"Autonomous Factory UI Command Center & Operator Dashboard Engine\"",
+  "last_updated": "2026-05-24T22:14:37.964Z",
+  "venture": {
+    "name": "Legacybridge",
+    "folder": "legacybridge",
+    "live_url": "https://legacybridge.noaerth.com"
+  },
+  "dashboard": {
+    "card_summary": "Legacybridge — PARKED",
+    "status_chips": [
+      "PARKED",
+      "LOW_RISK",
+      "DO_NOT_RUN",
+      "P4",
+      "NONE",
+      "APPROVAL_REQUIRED"
+    ],
+    "dashboard_stage": "PARKED",
+    "dashboard_priority": "P4",
+    "best_next_action": "Park — preserve venture-os; no build cycles",
+    "recommended_worker": "NONE",
+    "approval_required": true,
+    "manual_required": false,
+    "verification_required": true,
+    "main_blocker": "Parked",
+    "main_risk": "Standard portfolio risk",
+    "improvement_focus": "None until reopen"
+  }
+}
